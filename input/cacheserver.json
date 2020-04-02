@@ -1,7 +1,7 @@
 [
   { "id": "cacheserver1",
   "cache size": "10GB",
-  "max_connections": 5,
+  "max_connections": 2,
   "max_output_throughput": "1024",
   "max_input_throughput": "1024",   
   "time_to_check_cache": "2",

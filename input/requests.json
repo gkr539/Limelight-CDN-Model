@@ -17,7 +17,7 @@
 },
 { "id": "request3",
   "time": "2ms",                   
-  "client": "client2",
+  "client": "client1",
   "asset": "asset101",
   "server": "cacheserver1",
   "origin": "origin1"                     
@@ -25,8 +25,17 @@
 
 {
   "id": "request4",
- "time": "5ms",                   
+ "time": "3ms",                   
   "client": "client2",
+  "asset": "asset102",
+  "server": "cacheserver1",
+  "origin": "origin1"                     
+},
+
+{
+  "id": "request5",
+ "time": "16ms",                   
+  "client": "client1",
   "asset": "asset100",
   "server": "cacheserver1",
   "origin": "origin1"                     
