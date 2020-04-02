@@ -1,0 +1,43 @@
+[
+  {
+   "id": "request1", 
+   "time": "0ms",                   
+  "client": "client1",
+  "asset": "asset100",
+  "server": "cacheserver1",
+  "origin": "origin1"                     
+},
+{ 
+  "id": "request2",
+  "time": "0ms",                   
+  "client": "client2",
+  "asset": "asset102",
+  "server": "cacheserver1",
+  "origin": "origin1"                     
+},
+{ "id": "request3",
+  "time": "2ms",                   
+  "client": "client2",
+  "asset": "asset101",
+  "server": "cacheserver1",
+  "origin": "origin1"                     
+},
+
+{
+  "id": "request4",
+ "time": "5ms",                   
+  "client": "client2",
+  "asset": "asset100",
+  "server": "cacheserver1",
+  "origin": "origin1"                     
+}
+
+
+]
+
+
+
+
+
+
+
