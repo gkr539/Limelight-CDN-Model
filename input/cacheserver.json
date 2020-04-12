@@ -1,0 +1,44 @@
+[
+  { "id": "cacheserver1",
+  "cache size": "10GB",
+  "max_connections": 2,
+  "max_output_throughput": "1024",
+  "max_input_throughput": "1024",   
+  "time_to_check_cache": "2",
+  "cached_assets_id": ["asset100"],        
+  "cached_assets": [ 
+     { "asset": "asset100",
+       "Last refresh": 35   
+     }
+
+     ],
+  "inbound_connections": [
+    {"client":"client1",
+     "cache": "cacheserver1"
+    },
+    {"client":"client2",
+     "cache": "cacheserver1"
+    },
+    {"client":"client3",
+     "cache": "cacheserver1"
+    },
+    {"client":"client4",
+     "cache": "cacheserver1"
+    }
+    ],
+  "outbound_connections": [
+    {"cache": "cacheserver1",
+     "origin": "origin1"
+    },
+    {"cache": "cacheserver1",
+     "origin": "origin2"
+    },
+    {"cache": "cacheserver1",
+     "origin": "origin3"
+    },
+    {"cache": "cacheserver1",
+     "origin": "origin4"
+    }
+    ]
+}
+]
