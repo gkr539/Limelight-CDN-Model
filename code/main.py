@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Mar 19 22:57:24 2020
-
 @author: gouthamkrs
 """
 
@@ -18,7 +17,7 @@ end - if end is 1 then request is processed and asset is delivered
 '''
 # add throughput_used to req_status
     #mport os
-import shutil
+
 
 import utility
 import collections
@@ -104,7 +103,6 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
         #print(t, temp_keys)     
         temp_keys.sort(key = lambda x : x[0])
         temp_key1.sort(key = lambda x : x[0])
-        print(t, temp_key1)
         
         fin_keys = [i[1] for i in temp_key1] 
         for req in fin_keys:             
@@ -560,24 +558,24 @@ cache_hit=[]
 cache_miss = []
 cacheserver_outputthroughputavailable_list = []
 request_list = []
-workload_id={}
+#workload_id={}
 
 #def showing_plot(fig):
 #    fig.show() 
-def timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,clients_ip,origin_ip,workloads):
+def timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,clients_ip,origin_ip, workload_id):
     dir = 'output'
     if not os.path.exists(dir):
         os.makedirs(dir)
-    for workload in workloads.keys():
-        dir='output/'+workload
-        if not os.path.exists(dir)  :
-            os.makedirs('output/'+workload)
-        dir1='output/'+workload+'/visualization' 
-        if not os.path.exists(dir1):
-            os.makedirs('output/'+workload+'/visualization')
-        dir2='output/'+workload+'/system_state'
-        if not os.path.exists(dir2):
-            os.makedirs('output/'+workload+'/system_state')
+    workload = simulation_ip['simulation1']['workload']
+    dir='output/'+workload
+    if not os.path.exists(dir)  :
+        os.makedirs('output/'+workload)
+    dir1='output/'+workload+'/visualization' 
+    if not os.path.exists(dir1):
+        os.makedirs('output/'+workload+'/visualization')
+    dir2='output/'+workload+'/system_state'
+    if not os.path.exists(dir2):
+        os.makedirs('output/'+workload+'/system_state')
 
     
      
@@ -598,7 +596,7 @@ def timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,client
         #print(workload)
        
         if t%int(simulation_ip['simulation1']['tick_duration'])==0:            
-            sim_stat=CaptureSystemState(t,simulation_ip,workload_ip,req_status,cacheServer_status,workloads)
+            sim_stat=CaptureSystemState(t,simulation_ip,workload_ip,req_status,cacheServer_status,workload_id)
 
             with open(os.path.join('output', workload, 'system_state', '%s.txt' %t), 'w') as outfile:                          
                 json.dump(sim_stat, outfile, indent = 4)
@@ -651,7 +649,8 @@ def timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,client
         ax.set_ylim(0, ylim)
               
         if z:
-            ax.yaxis.set_major_locator(MaxNLocator(integer=True))         
+            ax.yaxis.set_major_locator(MaxNLocator(integer=True)) 
+            ax.xaxis.set_major_locator(MaxNLocator(integer=True)) 
 #            ax.plot(x,y,label=label1)
 #            ax.plot(x,z,label=label2)
             ax.plot(x,y,'-o',alpha=0.8,label=label1)
@@ -660,7 +659,8 @@ def timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,client
             plt.savefig('output/'+workload+'/visualization/%s.png' %title)
             
         else:            
-            ax.yaxis.set_major_locator(MaxNLocator(integer=True))        
+            ax.yaxis.set_major_locator(MaxNLocator(integer=True)) 
+            ax.xaxis.set_major_locator(MaxNLocator(integer=True)) 
             ax.plot(x,y,'-o',alpha=0.8)
             plt.savefig('output/'+workload+'/visualization/%s.png' %title)
         
@@ -676,12 +676,11 @@ def timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,client
 
     
     
-def CaptureSystemState(snapshot_time,simulation_ip,workload_ip,req_status,cacheServer_status,workloads):  
+def CaptureSystemState(snapshot_time,simulation_ip,workload_ip,req_status,cacheServer_status,workload_id):  
     simulation_output={}
     simulation_output['tick_duration']=int(simulation_ip['simulation1']['tick_duration'])
     simulation_output['snapshot_time']=snapshot_time
-    workload_id=list(workloads.keys())
-    simulation_output['workload']=workload_id[0]
+    simulation_output['workload']=workload_id
 
     
     simulation_output['requests_status']={}
@@ -717,7 +716,7 @@ def CaptureSystemState(snapshot_time,simulation_ip,workload_ip,req_status,cacheS
     return simulation_output
 
 def main():
-    #os.chdir('C:/Users/Madhu/Desktop/Limelight-CDN-Model/input')
+
     f = open('input/'+sys.argv[1])
     contents = f.read()
     lines = contents.splitlines()
@@ -728,11 +727,9 @@ def main():
     assets_ip = utility.read_json('input/'+lines[3])
     clients_ip = utility.read_json('input/'+lines[4])
     origin_ip = utility.read_json('input/'+lines[5])
-  #  workload_ip=utility.input_workload('input/'+lines[6])['workload2']
-    workloads = utility.read_json('input/'+lines[6])
-    workload_id=list(workloads.keys())
-   # workload_id.append(workload_id1)
-    workload_ip=utility.input_workload('input/'+lines[6])[workload_id[0]]
+
+    workload_id= simulation_ip['simulation1']['workload']
+    workload_ip=utility.input_workload('input/'+lines[6])[workload_id]
 
     
     
@@ -760,17 +757,13 @@ def main():
             origin=requests_ip[req]['origin']
             sim_status['connections_origin'][origin] = 0
             #sim_status['Origin_throughput'][origin] = 0
-    timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,clients_ip,origin_ip,workloads)
+    timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,clients_ip,origin_ip,workload_id)
    
 
     
 if __name__ == '__main__':
     main()
 #    
-#pprint(req_status)
+pprint(req_status)
 #pprint(cacheServer_status)   
 #pprint(sim_status)
-
-
-
-    
