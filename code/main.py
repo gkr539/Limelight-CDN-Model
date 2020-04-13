@@ -145,7 +145,7 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                                         throughput_status_time[client_id]['old'] = new_t
                                     req_count = 1
                                     for key in throughput_status_time[client_id]:
-                                        if key != 'old' and key != 'temp_adto' and key < new_t:
+                                        if key != 'old' and key != 'temp_adto' and key <= new_t:
                                             req_count += throughput_status_time[client_id][key]
                                         if key != 'old' and key != 'temp_adto' and key > new_t:
                                             throughput_status_time[client_id][key] +=1
