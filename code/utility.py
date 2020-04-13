@@ -7,11 +7,15 @@ Created on Fri Mar 20 15:00:49 2020
 """
 import json
 import math
-from pymongo import MongoClient
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.ticker import MaxNLocator
+import mplcursors
+#from pymongo import MongoClient
 
-client = MongoClient("mongodb+srv://cdnsimulation:limelightcdn@cdn-simulation-b1bz7.mongodb.net/test?retryWrites=true&w=majority")
-db = client.test
-db = client['cdnsimulation']
+#client = MongoClient("mongodb+srv://cdnsimulation:limelightcdn@cdn-simulation-b1bz7.mongodb.net/test?retryWrites=true&w=majority")
+#db = client.test
+#db = client['cdnsimulation']
 
 def read_json(path):
     
@@ -30,7 +34,7 @@ def input_workload(filepath):
      workloads=read_json(filepath)
      dict={}
      for workload in workloads.keys():
-         for i in workloads[workload]["Requests"]:
+         for i in workloads[workload]["requests"]:
              if workload not in dict:
                  dict[workload]={}
              if int(i["time"]) not in dict[workload]:
@@ -61,4 +65,37 @@ def deleteDataInCollections(collections,db):
         coll.remove() 
         
 collections=["simulation_input","requests","cacheservers","assets","clients","origins","workloads","systemstate"]
-deleteDataInCollections(collections,db)
+
+
+plt.style.use('ggplot')
+
+
+
+def live_plotter(x_vec,y1_data,line1,xlabel,ylabel,title,xlim,ylim,identifier='',pause_time=0.01):
+    if line1==[]:
+        plt.ion()
+        fig = plt.figure(figsize=(5,4))
+        ax = fig.add_subplot(111)
+        ax.set_xlim(0, xlim+1)
+        ax.set_ylim(0, ylim)
+
+        ax.yaxis.set_major_locator(MaxNLocator(integer=True))
+        line1, = ax.plot(x_vec,y1_data,'-o',alpha=0.8,) 
+    
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+        plt.title(title)
+        #mplcursors.cursor(hover=True)
+        mplcursors.cursor(hover=True)
+    line1.set_data(x_vec, y1_data)
+    plt.pause(pause_time)
+#    print(x_vec)
+#    print(len(y1_data))
+#    if(len(x_vec)!=0) and (x_vec[-1]==xlim):
+#        print("xxxxx")
+#       # plt.savefig('output/'+workload+'/visualization/%s.png' %title)
+#        plt.show(block=True)
+#        plt.ioff()
+#    
+    return line1
+#deleteDataInCollections(collections,db)

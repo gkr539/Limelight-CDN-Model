@@ -1,0 +1,9 @@
+[
+  { "id": "cacheserver1",
+  "max_connections": 2,
+  "max_output_throughput": 1024,
+  "max_input_throughput": 1024,   
+  "time_to_check_cache": 2,
+  "cached_assets_id": ["asset100" , "asset102"]
+}
+]

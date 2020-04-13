@@ -1,0 +1,22 @@
+[
+  { "id": "client1",
+  "max_input_throughput": 512,
+  "max_connections": 10
+},
+
+{ "id": "client2",
+  "max_input_throughput": 1024,
+  "max_connections": 5
+},
+
+{ "id": "client3",
+  "max_input_throughput": 1024,
+  "max_connections": 1
+},
+
+{ "id": "client4",
+  "max_input_throughput": 1024,
+  "max_connections": 5
+}
+]
+
