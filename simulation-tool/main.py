@@ -104,7 +104,7 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
         #print(t, temp_keys)     
         temp_keys.sort(key = lambda x : x[0])
         temp_key1.sort(key = lambda x : x[0])
-        print(t, temp_key1)
+        #print(t, temp_key1)
         
         fin_keys = [i[1] for i in temp_key1] 
         for req in fin_keys:             
@@ -573,8 +573,9 @@ def timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,client
         os.makedirs(dir)
     workload=simulation_ip["simulation1"]["workload"]
     dir='output/'+workload
-    if not os.path.exists(dir)  :
-        os.makedirs('output/'+workload)
+    if os.path.exists(dir): 
+        shutil.rmtree('output/'+workload)
+    os.makedirs('output/'+workload)
     dir1='output/'+workload+'/visualization' 
     if not os.path.exists(dir1):
         os.makedirs('output/'+workload+'/visualization')
@@ -603,7 +604,7 @@ def timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,client
         if t%int(simulation_ip['simulation1']['tick_duration'])==0:            
             sim_stat=CaptureSystemState(t,simulation_ip,workload_ip,req_status,cacheServer_status,workloads)
 
-            with open(os.path.join('output', workload, 'system_state', '%s.txt' %t), 'w') as outfile:                          
+            with open(os.path.join('output', workload, 'system_state', '%s.json' %t), 'w') as outfile:                          
                 json.dump(sim_stat, outfile, indent = 4)
                 
         
@@ -641,6 +642,7 @@ def timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,client
 #        line9=live_plotter(tick_intervals,request_list, line9, 'Time t','Active_requests','Time t vs Active_Requests',simulation_ip['simulation1']['simulation_duration'], request_count)
 #        a=t%int(simulation_ip['simulation1']['tick_duration'])
 #        print(t,a)
+        print("simulation time:"+str(t))
         t +=1
     #static plots 
           
@@ -683,7 +685,6 @@ def CaptureSystemState(snapshot_time,simulation_ip,workload_ip,req_status,cacheS
     simulation_output={}
     simulation_output['tick_duration']=int(simulation_ip['simulation1']['tick_duration'])
     simulation_output['snapshot_time']=snapshot_time
-    workload_id=list(workloads.keys())
     simulation_output['workload']=simulation_ip['simulation1']['workload']
 
     
@@ -768,10 +769,7 @@ def main():
     
 if __name__ == '__main__':
     main()
-#    
-pprint(req_status)
-#pprint(cacheServer_status)   
-#pprint(sim_status)
+
 
 
 

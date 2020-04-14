@@ -8,7 +8,6 @@ Created on Fri Mar 20 15:00:49 2020
 import json
 import math
 import matplotlib.pyplot as plt
-import numpy as np
 from matplotlib.ticker import MaxNLocator
 import mplcursors
 #from pymongo import MongoClient
