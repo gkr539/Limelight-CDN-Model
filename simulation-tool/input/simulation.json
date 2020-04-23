@@ -5,6 +5,7 @@
  "simulation_duration": 50,
  "tcp_connection_time": 3,
  "workload": "workload1",
- "cache servers": ["cacheserver1"]
+ "cache servers": ["cacheserver1"],
+ "plot_for_cacheServer": "cacheserver1"
 }
 ]

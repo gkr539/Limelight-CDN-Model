@@ -1,8 +1,24 @@
 [
   { "id": "cacheserver1",
-  "max_connections": 2,
+  "max_connections": 0,
   "max_output_throughput": 1024,
   "max_input_throughput": 1024,   
+  "time_to_check_cache": 2,
+  "cached_assets_id": ["asset100" , "asset102"]
+},
+
+{ "id": "cacheserver2",
+  "max_connections": 1,
+  "max_output_throughput": 1024,
+  "max_input_throughput": 1024,   
+  "time_to_check_cache": 2,
+  "cached_assets_id": ["asset100" , "asset102"]
+},
+
+{ "id": "cacheserver3",
+  "max_connections": 1,
+  "max_output_throughput": 256,
+  "max_input_throughput": 256,   
   "time_to_check_cache": 2,
   "cached_assets_id": ["asset100" , "asset102"]
 }

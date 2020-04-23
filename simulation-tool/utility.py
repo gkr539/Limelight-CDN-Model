@@ -2,19 +2,18 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Mar 20 15:00:49 2020
-
 @author: gouthamkrs
 """
 import json
 import math
+import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
 import mplcursors
-#from pymongo import MongoClient
+import os
+import shutil
+from matplotlib import style
 
-#client = MongoClient("mongodb+srv://cdnsimulation:limelightcdn@cdn-simulation-b1bz7.mongodb.net/test?retryWrites=true&w=majority")
-#db = client.test
-#db = client['cdnsimulation']
 
 def read_json(path):
     
@@ -94,7 +93,164 @@ def live_plotter(x_vec,y1_data,line1,xlabel,ylabel,title,xlim,ylim,identifier=''
 #        print("xxxxx")
 #       # plt.savefig('output/'+workload+'/visualization/%s.png' %title)
 #        plt.show(block=True)
-#        plt.ioff()
+    plt.ioff()
 #    
     return line1
-#deleteDataInCollections(collections,db)
+
+
+def assignCacheServer(clients_ip, client):
+    distances = clients_ip[client]['distance']
+    #max_connection = cacheServer_ip[cacheServer]['max_connections']
+    
+    distance_arr = [(distances[x],x) for x in distances]
+    distance_arr.sort(key = lambda x: x[0])
+    return distance_arr
+
+
+def build_cacheServer_status(cacheServer_status, cacheServer,cacheServer_ip):
+    if cacheServer in cacheServer_status:
+        return cacheServer_status
+    else:
+        cacheServer_status[cacheServer]['cache_hit'] = 0
+        cacheServer_status[cacheServer]['cache_miss'] = 0
+        cacheServer_status[cacheServer]['active_inbound_connections'] = 0
+        cacheServer_status[cacheServer]['active_outbound_connections'] = 0
+        cacheServer_status[cacheServer]['input_throughput_used'] = 0
+        cacheServer_status[cacheServer]['output_throughput_used'] = 0
+        cacheServer_status[cacheServer]['input_throughput_available'] = int(cacheServer_ip[cacheServer]["max_input_throughput"])
+        cacheServer_status[cacheServer]['output_throughput_available'] = int(cacheServer_ip[cacheServer]["max_output_throughput"])
+        return cacheServer_status
+    
+def build_request_status(req_status,req,t,requests_ip):   
+        
+    
+        print(req)
+        #req_status['re']['aa'] = 1
+        req_status[req] = {}
+        req_status[req][t] = "started"
+        req_status[req]['initiated_at'] = t        
+        req_status[req]['stage'] = 0
+        req_status[req]['completed'] = 0
+        req_status[req]['client'] = requests_ip[req]['client']
+        req_status[req]['origin'] = requests_ip[req]['origin']
+        req_status[req]['asset'] = requests_ip[req]['asset']
+        req_status[req]['input_throughput_being_used'] = {}
+        req_status[req]['input_throughput_being_used']['client'] = 0
+        req_status[req]['input_throughput_being_used']['cacheServer'] = 0
+        req_status[req]['output_throughput_being_used'] = {}
+        req_status[req]['output_throughput_being_used']['origin'] = 0
+        req_status[req]['output_throughput_being_used']['cacheServer'] = 0
+        return req_status
+
+def sortKeys(req_status):
+    temp_key1 = []
+    for r in req_status.keys():
+        if req_status[r]['completed'] == 0:
+            v1 = req_status[r].get('adtc1',0)
+            v2 = req_status[r].get('adtc',0)
+            #v3 = req_status[r].get('cct',0)
+            if v1 != 0:
+                temp_key1.append((v1,r))
+            elif v2 !=0:
+                temp_key1.append((v2,r))
+            else:
+                temp_key1.append((0,r))
+                
+            '''  
+            #print(req_status[r].get('adtc1'))
+            if  v1 != 0:
+                v2 = req_status[r].get('adtc',0)
+                temp_keys.append((v2,r))
+            else:
+                temp_keys.append((v1,r))
+            v3 = req_status[r].get('cct',0)
+            '''
+    temp_key1.sort(key = lambda x : x[0])      
+    fin_keys = [i[1] for i in temp_key1] 
+    return fin_keys
+        
+
+def CaptureSystemState(snapshot_time,simulation_ip,workload_ip,req_status,cacheServer_status,workloads):  
+    simulation_output={}
+    simulation_output['tick_duration']=int(simulation_ip['simulation1']['tick_duration'])
+    simulation_output['snapshot_time']=snapshot_time
+    simulation_output['workload']=simulation_ip['simulation1']['workload']
+
+    
+    simulation_output['requests_status']={}
+    for req in req_status.keys():
+        req_status_dict={}
+        req_status_dict["initiated_at"]=req_status[req]['initiated_at']
+        req_status_dict["client"]=req_status[req]["client"]
+        #req_status_dict["cacheServer"]= cacheServer_used 
+        req_status_dict["origin"]=req_status[req]["origin"]
+        req_status_dict["asset"]=req_status[req]["asset"]
+        req_status_dict["status"]=req_status[req].get(snapshot_time,"Request already processed")
+        req_status_dict["input_throughput_being_used"]=req_status[req]['input_throughput_being_used']
+        req_status_dict["output_throughput_being_used"]=req_status[req]['output_throughput_being_used']
+        if req_status[req]['completed']==0: 
+            req_status_dict["completed"]="No"
+        else:
+            req_status_dict["completed"]="Yes"
+        simulation_output['requests_status'][req]=req_status_dict
+        
+    simulation_output['cacheserver_status']={}
+    for cacheserver in cacheServer_status.keys():
+        cs_status_dict={}
+        cs_status_dict["cache_hit"]=cacheServer_status[cacheserver]["cache_hit"]
+        cs_status_dict["cache_miss"]=cacheServer_status[cacheserver]["cache_miss"]
+        cs_status_dict["input_throughput_being_used"]=cacheServer_status[cacheserver]["input_throughput_used"]
+        cs_status_dict["output_throughput_being_used"]=cacheServer_status[cacheserver]["output_throughput_used"]
+        cs_status_dict["input_throughput_available"]=cacheServer_status[cacheserver]["input_throughput_available"]
+        cs_status_dict["output_throughput_available"]=cacheServer_status[cacheserver]["output_throughput_available"]
+        cs_status_dict["number_of_active_inbound_connections"]=cacheServer_status[cacheserver]["active_inbound_connections"]
+        cs_status_dict["number_of_active_outbound_connections"]=cacheServer_status[cacheserver]["active_outbound_connections"]
+        simulation_output['cacheserver_status'][cacheserver]=cs_status_dict
+        
+    return simulation_output
+
+def makedirectory(simulation_ip):
+    dir = 'output'
+    if not os.path.exists(dir):
+        os.makedirs(dir)
+    workload=simulation_ip["simulation1"]["workload"]
+    dir='output/'+workload
+    if os.path.exists(dir): 
+        shutil.rmtree('output/'+workload)
+    os.makedirs('output/'+workload)
+    dir1='output/'+workload+'/visualization' 
+    if not os.path.exists(dir1):
+        os.makedirs('output/'+workload+'/visualization')
+    dir2='output/'+workload+'/system_state'
+    if not os.path.exists(dir2):
+        os.makedirs('output/'+workload+'/system_state')                
+    return workload
+
+def visualize(x,y,z,xlabel,ylabel,title,xlim,ylim,workload,label1=None,label2=None):
+    style.use('ggplot')
+    ax = plt.figure().gca()
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.title(title)
+    ax.set_xlim(0, xlim)
+    ax.set_ylim(0, ylim)
+          
+    if z:
+        ax.yaxis.set_major_locator(MaxNLocator(integer=True))         
+#            ax.plot(x,y,label=label1)
+#            ax.plot(x,z,label=label2)
+        ax.plot(x,y,'-o',alpha=0.8,label=label1)
+        ax.plot(x,z,'-o',alpha=0.8,label=label2)
+        plt.legend()
+        plt.savefig('output/'+workload+'/visualization/%s.png' %title)
+        plt.close()
+       # matplotlib.use('Agg')
+        
+    else:            
+        ax.yaxis.set_major_locator(MaxNLocator(integer=True))        
+        ax.plot(x,y,'-o',alpha=0.8)
+        plt.savefig('output/'+workload+'/visualization/%s.png' %title)
+        plt.close()
+      #  matplotlib.use('Agg')
+        
+    matplotlib.use('Agg')
