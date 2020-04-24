@@ -1,9 +1,10 @@
+  
 [
   { "id": "workload1",
   "requests": [ 
-{ "time": 0, "request_id":["request1","request2","request3","request4"] }
-
-
+{ "time": 0, "request_id":["request1","request2"] },
+ { "time": 4, "request_id":["request3","request4"] },
+{ "time": 10, "request_id":["request5"] }
 ]
 }
 ]

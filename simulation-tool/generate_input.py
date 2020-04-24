@@ -74,6 +74,10 @@ for k in order:
             #client_obj["max_connections"]=random.randint(int(data["client"]["max_connections"][0]/100+1),int(data["client"]["max_connections"][1]/100))*100
             client_obj["max_input_throughput"]=random.randint(int(data["client"]["max_input_throughput"][0]/data["client"]["max_input_throughput"][2]+1),int(data["client"]["max_input_throughput"][1]/data["client"]["max_input_throughput"][2]))*data["client"]["max_input_throughput"][2]
             client_obj["max_connections"]=random.randint(int(data["client"]["max_connections"][0]/data["client"]["max_connections"][2]+1),int(data["client"]["max_connections"][1]/data["client"]["max_connections"][2]))*data["client"]["max_connections"][2]
+            temp={}
+            for j in range(1,data["cacheserver"]["number_of_objects"]+1):
+                temp["cacheserver"+str(j)]=random.randint(int(data["client"]["distance_from_cacheservers"][0]/data["client"]["distance_from_cacheservers"][2]+1),int(data["client"]["distance_from_cacheservers"][1]/data["client"]["distance_from_cacheservers"][2]))*data["client"]["distance_from_cacheservers"][2]
+            client_obj["distance"]=temp
             master_obj.append(client_obj)
         with open(os.path.join('input', 'clients.json'), 'w') as outfile:
             json.dump(master_obj, outfile,indent=4)
@@ -118,6 +122,7 @@ for k in order:
         sim_obj["simulation_duration"]=data["simulation"]["simulation_duration"]
         sim_obj["tcp_connection_time"]=data["simulation"]["tcp_connection_time"]
         sim_obj["workload"]="workload"+str(random.randint(1,data["workload"]["number_of_objects"]))
+        sim_obj["plot_for_cacheServer"]=data["simulation"]["plot_for_cacheServer"]
         master_obj.append(sim_obj)
         with open(os.path.join('input', 'simulation.json'), 'w') as outfile:
             json.dump(master_obj, outfile,indent=4)

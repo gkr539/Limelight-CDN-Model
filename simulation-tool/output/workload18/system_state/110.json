@@ -1,0 +1,3930 @@
+{
+    "tick_duration": 10,
+    "snapshot_time": 110,
+    "workload": "workload18",
+    "number_of_requests_completed": 0,
+    "total_data_transferred": 0,
+    "requests_status": {
+        "request129": {
+            "initiated_at": 104,
+            "client": "client137",
+            "origin": "origin81",
+            "asset": "asset74",
+            "asset_size": 340,
+            "cacheserver": "cacheserver6",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request24": {
+            "initiated_at": 109,
+            "client": "client96",
+            "origin": "origin9",
+            "asset": "asset209",
+            "asset_size": 420,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request120": {
+            "initiated_at": 109,
+            "client": "client32",
+            "origin": "origin83",
+            "asset": "asset63",
+            "asset_size": 480,
+            "cacheserver": "cacheserver2",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request64": {
+            "initiated_at": 110,
+            "client": "client97",
+            "origin": "origin95",
+            "asset": "asset157",
+            "asset_size": 490,
+            "cacheserver": "cacheserver2",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request55": {
+            "initiated_at": 106,
+            "client": "client62",
+            "origin": "origin191",
+            "asset": "asset223",
+            "asset_size": 320,
+            "cacheserver": "cacheserver8",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request5": {
+            "initiated_at": 110,
+            "client": "client200",
+            "origin": "origin46",
+            "asset": "asset229",
+            "asset_size": 310,
+            "cacheserver": "cacheserver2",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request153": {
+            "initiated_at": 105,
+            "client": "client76",
+            "origin": "origin22",
+            "asset": "asset216",
+            "asset_size": 460,
+            "cacheserver": "cacheserver7",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request116": {
+            "initiated_at": 109,
+            "client": "client141",
+            "origin": "origin39",
+            "asset": "asset164",
+            "asset_size": 330,
+            "cacheserver": "cacheserver4",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request173": {
+            "initiated_at": 101,
+            "client": "client134",
+            "origin": "origin67",
+            "asset": "asset208",
+            "asset_size": 250,
+            "cacheserver": "cacheserver45",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request106": {
+            "initiated_at": 99,
+            "client": "client55",
+            "origin": "origin148",
+            "asset": "asset294",
+            "asset_size": 290,
+            "cacheserver": "cacheserver21",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request70": {
+            "initiated_at": 107,
+            "client": "client72",
+            "origin": "origin161",
+            "asset": "asset56",
+            "asset_size": 390,
+            "cacheserver": "cacheserver12",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request87": {
+            "initiated_at": 109,
+            "client": "client186",
+            "origin": "origin184",
+            "asset": "asset122",
+            "asset_size": 180,
+            "cacheserver": "cacheserver6",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request158": {
+            "initiated_at": 105,
+            "client": "client73",
+            "origin": "origin138",
+            "asset": "asset54",
+            "asset_size": 410,
+            "cacheserver": "cacheserver8",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request178": {
+            "initiated_at": 110,
+            "client": "client129",
+            "origin": "origin176",
+            "asset": "asset12",
+            "asset_size": 200,
+            "cacheserver": "cacheserver13",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request33": {
+            "initiated_at": 109,
+            "client": "client18",
+            "origin": "origin6",
+            "asset": "asset86",
+            "asset_size": 290,
+            "cacheserver": "cacheserver11",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request128": {
+            "initiated_at": 98,
+            "client": "client196",
+            "origin": "origin48",
+            "asset": "asset149",
+            "asset_size": 100,
+            "cacheserver": "cacheserver18",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request113": {
+            "initiated_at": 104,
+            "client": "client199",
+            "origin": "origin67",
+            "asset": "asset244",
+            "asset_size": 170,
+            "cacheserver": "cacheserver5",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request45": {
+            "initiated_at": 109,
+            "client": "client198",
+            "origin": "origin163",
+            "asset": "asset206",
+            "asset_size": 400,
+            "cacheserver": "cacheserver11",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request72": {
+            "initiated_at": 106,
+            "client": "client125",
+            "origin": "origin156",
+            "asset": "asset233",
+            "asset_size": 170,
+            "cacheserver": "cacheserver4",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request57": {
+            "initiated_at": 108,
+            "client": "client19",
+            "origin": "origin136",
+            "asset": "asset29",
+            "asset_size": 170,
+            "cacheserver": "cacheserver25",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request6": {
+            "initiated_at": 109,
+            "client": "client53",
+            "origin": "origin178",
+            "asset": "asset127",
+            "asset_size": 70,
+            "cacheserver": "cacheserver12",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request25": {
+            "initiated_at": 110,
+            "client": "client97",
+            "origin": "origin158",
+            "asset": "asset22",
+            "asset_size": 80,
+            "cacheserver": "cacheserver2",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request28": {
+            "initiated_at": 104,
+            "client": "client77",
+            "origin": "origin200",
+            "asset": "asset211",
+            "asset_size": 450,
+            "cacheserver": "cacheserver14",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request1": {
+            "initiated_at": 105,
+            "client": "client199",
+            "origin": "origin25",
+            "asset": "asset203",
+            "asset_size": 230,
+            "cacheserver": "cacheserver5",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request125": {
+            "initiated_at": 104,
+            "client": "client7",
+            "origin": "origin105",
+            "asset": "asset249",
+            "asset_size": 340,
+            "cacheserver": "cacheserver1",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request179": {
+            "initiated_at": 98,
+            "client": "client189",
+            "origin": "origin85",
+            "asset": "asset165",
+            "asset_size": 40,
+            "cacheserver": "cacheserver17",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request119": {
+            "initiated_at": 109,
+            "client": "client148",
+            "origin": "origin145",
+            "asset": "asset293",
+            "asset_size": 360,
+            "cacheserver": "cacheserver1",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request13": {
+            "initiated_at": 109,
+            "client": "client113",
+            "origin": "origin55",
+            "asset": "asset137",
+            "asset_size": 380,
+            "cacheserver": "cacheserver13",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request114": {
+            "initiated_at": 110,
+            "client": "client100",
+            "origin": "origin139",
+            "asset": "asset32",
+            "asset_size": 310,
+            "cacheserver": "cacheserver2",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request59": {
+            "initiated_at": 109,
+            "client": "client90",
+            "origin": "origin85",
+            "asset": "asset123",
+            "asset_size": 490,
+            "cacheserver": "cacheserver4",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request127": {
+            "initiated_at": 110,
+            "client": "client6",
+            "origin": "origin137",
+            "asset": "asset152",
+            "asset_size": 20,
+            "cacheserver": "cacheserver27",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request139": {
+            "initiated_at": 109,
+            "client": "client102",
+            "origin": "origin51",
+            "asset": "asset143",
+            "asset_size": 410,
+            "cacheserver": "cacheserver27",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request11": {
+            "initiated_at": 107,
+            "client": "client36",
+            "origin": "origin63",
+            "asset": "asset212",
+            "asset_size": 30,
+            "cacheserver": "cacheserver22",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request172": {
+            "initiated_at": 110,
+            "client": "client61",
+            "origin": "origin13",
+            "asset": "asset92",
+            "asset_size": 290,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request22": {
+            "initiated_at": 109,
+            "client": "client124",
+            "origin": "origin150",
+            "asset": "asset209",
+            "asset_size": 420,
+            "cacheserver": "cacheserver7",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request194": {
+            "initiated_at": 109,
+            "client": "client21",
+            "origin": "origin181",
+            "asset": "asset3",
+            "asset_size": 170,
+            "cacheserver": "cacheserver16",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request157": {
+            "initiated_at": 106,
+            "client": "client183",
+            "origin": "origin41",
+            "asset": "asset187",
+            "asset_size": 180,
+            "cacheserver": "cacheserver19",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request80": {
+            "initiated_at": 109,
+            "client": "client151",
+            "origin": "origin46",
+            "asset": "asset112",
+            "asset_size": 450,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request93": {
+            "initiated_at": 107,
+            "client": "client26",
+            "origin": "origin147",
+            "asset": "asset167",
+            "asset_size": 220,
+            "cacheserver": "cacheserver11",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request56": {
+            "initiated_at": 110,
+            "client": "client158",
+            "origin": "origin79",
+            "asset": "asset256",
+            "asset_size": 200,
+            "cacheserver": "cacheserver6",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request164": {
+            "initiated_at": 110,
+            "client": "client4",
+            "origin": "origin71",
+            "asset": "asset105",
+            "asset_size": 20,
+            "cacheserver": "cacheserver5",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request63": {
+            "initiated_at": 108,
+            "client": "client53",
+            "origin": "origin174",
+            "asset": "asset104",
+            "asset_size": 30,
+            "cacheserver": "cacheserver12",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request171": {
+            "initiated_at": 101,
+            "client": "client172",
+            "origin": "origin53",
+            "asset": "asset78",
+            "asset_size": 250,
+            "cacheserver": "cacheserver23",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request133": {
+            "initiated_at": 110,
+            "client": "client6",
+            "origin": "origin151",
+            "asset": "asset29",
+            "asset_size": 170,
+            "cacheserver": "cacheserver27",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request19": {
+            "initiated_at": 109,
+            "client": "client38",
+            "origin": "origin177",
+            "asset": "asset155",
+            "asset_size": 290,
+            "cacheserver": "cacheserver6",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request124": {
+            "initiated_at": 108,
+            "client": "client112",
+            "origin": "origin71",
+            "asset": "asset44",
+            "asset_size": 460,
+            "cacheserver": "cacheserver4",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request105": {
+            "initiated_at": 105,
+            "client": "client96",
+            "origin": "origin8",
+            "asset": "asset231",
+            "asset_size": 310,
+            "cacheserver": "cacheserver3",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request199": {
+            "initiated_at": 109,
+            "client": "client90",
+            "origin": "origin156",
+            "asset": "asset107",
+            "asset_size": 320,
+            "cacheserver": "cacheserver4",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request86": {
+            "initiated_at": 109,
+            "client": "client114",
+            "origin": "origin181",
+            "asset": "asset252",
+            "asset_size": 480,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request159": {
+            "initiated_at": 104,
+            "client": "client61",
+            "origin": "origin94",
+            "asset": "asset213",
+            "asset_size": 470,
+            "cacheserver": "cacheserver3",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request166": {
+            "initiated_at": 109,
+            "client": "client54",
+            "origin": "origin165",
+            "asset": "asset102",
+            "asset_size": 50,
+            "cacheserver": "cacheserver24",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request73": {
+            "initiated_at": 110,
+            "client": "client171",
+            "origin": "origin12",
+            "asset": "asset4",
+            "asset_size": 30,
+            "cacheserver": "cacheserver4",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request108": {
+            "initiated_at": 110,
+            "client": "client122",
+            "origin": "origin54",
+            "asset": "asset140",
+            "asset_size": 60,
+            "cacheserver": "cacheserver6",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request47": {
+            "initiated_at": 110,
+            "client": "client145",
+            "origin": "origin186",
+            "asset": "asset144",
+            "asset_size": 220,
+            "cacheserver": "cacheserver5",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request183": {
+            "initiated_at": 110,
+            "client": "client62",
+            "origin": "origin61",
+            "asset": "asset8",
+            "asset_size": 140,
+            "cacheserver": "cacheserver8",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request184": {
+            "initiated_at": 108,
+            "client": "client187",
+            "origin": "origin133",
+            "asset": "asset222",
+            "asset_size": 90,
+            "cacheserver": "cacheserver2",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request79": {
+            "initiated_at": 99,
+            "client": "client95",
+            "origin": "origin125",
+            "asset": "asset255",
+            "asset_size": 420,
+            "cacheserver": "cacheserver27",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request149": {
+            "initiated_at": 107,
+            "client": "client143",
+            "origin": "origin147",
+            "asset": "asset15",
+            "asset_size": 60,
+            "cacheserver": "cacheserver28",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request84": {
+            "initiated_at": 109,
+            "client": "client17",
+            "origin": "origin28",
+            "asset": "asset228",
+            "asset_size": 70,
+            "cacheserver": "cacheserver10",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request143": {
+            "initiated_at": 105,
+            "client": "client29",
+            "origin": "origin132",
+            "asset": "asset93",
+            "asset_size": 430,
+            "cacheserver": "cacheserver5",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request12": {
+            "initiated_at": 106,
+            "client": "client32",
+            "origin": "origin72",
+            "asset": "asset35",
+            "asset_size": 430,
+            "cacheserver": "cacheserver5",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request95": {
+            "initiated_at": 103,
+            "client": "client122",
+            "origin": "origin145",
+            "asset": "asset43",
+            "asset_size": 380,
+            "cacheserver": "cacheserver6",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request21": {
+            "initiated_at": 109,
+            "client": "client138",
+            "origin": "origin26",
+            "asset": "asset220",
+            "asset_size": 370,
+            "cacheserver": "cacheserver9",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request20": {
+            "initiated_at": 110,
+            "client": "client140",
+            "origin": "origin54",
+            "asset": "asset286",
+            "asset_size": 300,
+            "cacheserver": "cacheserver10",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request18": {
+            "initiated_at": 109,
+            "client": "client107",
+            "origin": "origin41",
+            "asset": "asset243",
+            "asset_size": 320,
+            "cacheserver": "cacheserver12",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request185": {
+            "initiated_at": 110,
+            "client": "client141",
+            "origin": "origin64",
+            "asset": "asset270",
+            "asset_size": 100,
+            "cacheserver": "cacheserver4",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request117": {
+            "initiated_at": 110,
+            "client": "client107",
+            "origin": "origin198",
+            "asset": "asset86",
+            "asset_size": 290,
+            "cacheserver": "cacheserver12",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request98": {
+            "initiated_at": 104,
+            "client": "client89",
+            "origin": "origin39",
+            "asset": "asset268",
+            "asset_size": 180,
+            "cacheserver": "cacheserver1",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request176": {
+            "initiated_at": 109,
+            "client": "client42",
+            "origin": "origin76",
+            "asset": "asset151",
+            "asset_size": 470,
+            "cacheserver": "cacheserver4",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request32": {
+            "initiated_at": 103,
+            "client": "client160",
+            "origin": "origin107",
+            "asset": "asset196",
+            "asset_size": 370,
+            "cacheserver": "cacheserver21",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request156": {
+            "initiated_at": 96,
+            "client": "client175",
+            "origin": "origin177",
+            "asset": "asset111",
+            "asset_size": 280,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to Origin",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request39": {
+            "initiated_at": 110,
+            "client": "client51",
+            "origin": "origin157",
+            "asset": "asset194",
+            "asset_size": 330,
+            "cacheserver": "cacheserver15",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request141": {
+            "initiated_at": 107,
+            "client": "client88",
+            "origin": "origin25",
+            "asset": "asset200",
+            "asset_size": 300,
+            "cacheserver": "cacheserver16",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request71": {
+            "initiated_at": 110,
+            "client": "client133",
+            "origin": "origin186",
+            "asset": "asset40",
+            "asset_size": 150,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request152": {
+            "initiated_at": 104,
+            "client": "client174",
+            "origin": "origin85",
+            "asset": "asset282",
+            "asset_size": 100,
+            "cacheserver": "cacheserver10",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request160": {
+            "initiated_at": 106,
+            "client": "client67",
+            "origin": "origin159",
+            "asset": "asset196",
+            "asset_size": 370,
+            "cacheserver": "cacheserver12",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request137": {
+            "initiated_at": 108,
+            "client": "client24",
+            "origin": "origin149",
+            "asset": "asset220",
+            "asset_size": 370,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request74": {
+            "initiated_at": 110,
+            "client": "client183",
+            "origin": "origin105",
+            "asset": "asset1",
+            "asset_size": 60,
+            "cacheserver": "cacheserver19",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request78": {
+            "initiated_at": 107,
+            "client": "client32",
+            "origin": "origin119",
+            "asset": "asset297",
+            "asset_size": 80,
+            "cacheserver": "cacheserver5",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request88": {
+            "initiated_at": 104,
+            "client": "client119",
+            "origin": "origin179",
+            "asset": "asset253",
+            "asset_size": 430,
+            "cacheserver": "cacheserver8",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request15": {
+            "initiated_at": 109,
+            "client": "client147",
+            "origin": "origin73",
+            "asset": "asset51",
+            "asset_size": 140,
+            "cacheserver": "cacheserver9",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request30": {
+            "initiated_at": 104,
+            "client": "client51",
+            "origin": "origin188",
+            "asset": "asset288",
+            "asset_size": 450,
+            "cacheserver": "cacheserver15",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request27": {
+            "initiated_at": 110,
+            "client": "client8",
+            "origin": "origin105",
+            "asset": "asset72",
+            "asset_size": 330,
+            "cacheserver": "cacheserver2",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request41": {
+            "initiated_at": 109,
+            "client": "client183",
+            "origin": "origin170",
+            "asset": "asset18",
+            "asset_size": 20,
+            "cacheserver": "cacheserver19",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request29": {
+            "initiated_at": 107,
+            "client": "client181",
+            "origin": "origin115",
+            "asset": "asset70",
+            "asset_size": 130,
+            "cacheserver": "cacheserver23",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request169": {
+            "initiated_at": 103,
+            "client": "client188",
+            "origin": "origin21",
+            "asset": "asset214",
+            "asset_size": 290,
+            "cacheserver": "cacheserver9",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request54": {
+            "initiated_at": 109,
+            "client": "client101",
+            "origin": "origin153",
+            "asset": "asset41",
+            "asset_size": 500,
+            "cacheserver": "cacheserver7",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request2": {
+            "initiated_at": 109,
+            "client": "client128",
+            "origin": "origin141",
+            "asset": "asset265",
+            "asset_size": 290,
+            "cacheserver": "cacheserver1",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request46": {
+            "initiated_at": 110,
+            "client": "client83",
+            "origin": "origin12",
+            "asset": "asset232",
+            "asset_size": 460,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request91": {
+            "initiated_at": 108,
+            "client": "client124",
+            "origin": "origin171",
+            "asset": "asset142",
+            "asset_size": 270,
+            "cacheserver": "cacheserver7",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request161": {
+            "initiated_at": 109,
+            "client": "client3",
+            "origin": "origin53",
+            "asset": "asset256",
+            "asset_size": 200,
+            "cacheserver": "cacheserver2",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request142": {
+            "initiated_at": 106,
+            "client": "client31",
+            "origin": "origin131",
+            "asset": "asset177",
+            "asset_size": 430,
+            "cacheserver": "cacheserver18",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request100": {
+            "initiated_at": 110,
+            "client": "client104",
+            "origin": "origin179",
+            "asset": "asset246",
+            "asset_size": 350,
+            "cacheserver": "cacheserver15",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request190": {
+            "initiated_at": 104,
+            "client": "client34",
+            "origin": "origin144",
+            "asset": "asset2",
+            "asset_size": 250,
+            "cacheserver": "cacheserver17",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request69": {
+            "initiated_at": 108,
+            "client": "client81",
+            "origin": "origin110",
+            "asset": "asset219",
+            "asset_size": 120,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request118": {
+            "initiated_at": 109,
+            "client": "client146",
+            "origin": "origin178",
+            "asset": "asset105",
+            "asset_size": 20,
+            "cacheserver": "cacheserver4",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request112": {
+            "initiated_at": 105,
+            "client": "client93",
+            "origin": "origin17",
+            "asset": "asset86",
+            "asset_size": 290,
+            "cacheserver": "cacheserver22",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request96": {
+            "initiated_at": 109,
+            "client": "client1",
+            "origin": "origin105",
+            "asset": "asset210",
+            "asset_size": 150,
+            "cacheserver": "cacheserver7",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request4": {
+            "initiated_at": 110,
+            "client": "client145",
+            "origin": "origin147",
+            "asset": "asset104",
+            "asset_size": 30,
+            "cacheserver": "cacheserver5",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request48": {
+            "initiated_at": 109,
+            "client": "client82",
+            "origin": "origin12",
+            "asset": "asset260",
+            "asset_size": 110,
+            "cacheserver": "cacheserver4",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request180": {
+            "initiated_at": 109,
+            "client": "client149",
+            "origin": "origin6",
+            "asset": "asset13",
+            "asset_size": 350,
+            "cacheserver": "cacheserver1",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request134": {
+            "initiated_at": 109,
+            "client": "client131",
+            "origin": "origin110",
+            "asset": "asset77",
+            "asset_size": 360,
+            "cacheserver": "cacheserver4",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request115": {
+            "initiated_at": 110,
+            "client": "client153",
+            "origin": "origin14",
+            "asset": "asset185",
+            "asset_size": 490,
+            "cacheserver": "cacheserver25",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request104": {
+            "initiated_at": 104,
+            "client": "client28",
+            "origin": "origin117",
+            "asset": "asset270",
+            "asset_size": 100,
+            "cacheserver": "cacheserver5",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request187": {
+            "initiated_at": 110,
+            "client": "client185",
+            "origin": "origin12",
+            "asset": "asset140",
+            "asset_size": 60,
+            "cacheserver": "cacheserver2",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request132": {
+            "initiated_at": 108,
+            "client": "client34",
+            "origin": "origin171",
+            "asset": "asset162",
+            "asset_size": 40,
+            "cacheserver": "cacheserver17",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request146": {
+            "initiated_at": 110,
+            "client": "client129",
+            "origin": "origin177",
+            "asset": "asset166",
+            "asset_size": 360,
+            "cacheserver": "cacheserver13",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request109": {
+            "initiated_at": 105,
+            "client": "client41",
+            "origin": "origin53",
+            "asset": "asset216",
+            "asset_size": 460,
+            "cacheserver": "cacheserver22",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request168": {
+            "initiated_at": 107,
+            "client": "client3",
+            "origin": "origin40",
+            "asset": "asset181",
+            "asset_size": 200,
+            "cacheserver": "cacheserver15",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request89": {
+            "initiated_at": 110,
+            "client": "client181",
+            "origin": "origin55",
+            "asset": "asset88",
+            "asset_size": 420,
+            "cacheserver": "cacheserver21",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request155": {
+            "initiated_at": 107,
+            "client": "client77",
+            "origin": "origin155",
+            "asset": "asset12",
+            "asset_size": 200,
+            "cacheserver": "cacheserver14",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request7": {
+            "initiated_at": 110,
+            "client": "client28",
+            "origin": "origin103",
+            "asset": "asset200",
+            "asset_size": 300,
+            "cacheserver": "cacheserver5",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request144": {
+            "initiated_at": 110,
+            "client": "client65",
+            "origin": "origin18",
+            "asset": "asset280",
+            "asset_size": 340,
+            "cacheserver": "cacheserver2",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request34": {
+            "initiated_at": 109,
+            "client": "client24",
+            "origin": "origin172",
+            "asset": "asset169",
+            "asset_size": 210,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request23": {
+            "initiated_at": 104,
+            "client": "client108",
+            "origin": "origin111",
+            "asset": "asset271",
+            "asset_size": 440,
+            "cacheserver": "cacheserver12",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request38": {
+            "initiated_at": 103,
+            "client": "client61",
+            "origin": "origin79",
+            "asset": "asset113",
+            "asset_size": 240,
+            "cacheserver": "cacheserver3",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request68": {
+            "initiated_at": 106,
+            "client": "client156",
+            "origin": "origin33",
+            "asset": "asset279",
+            "asset_size": 180,
+            "cacheserver": "cacheserver21",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request182": {
+            "initiated_at": 109,
+            "client": "client186",
+            "origin": "origin37",
+            "asset": "asset119",
+            "asset_size": 220,
+            "cacheserver": "cacheserver6",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request135": {
+            "initiated_at": 99,
+            "client": "client180",
+            "origin": "origin94",
+            "asset": "asset241",
+            "asset_size": 480,
+            "cacheserver": "cacheserver20",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request130": {
+            "initiated_at": 110,
+            "client": "client134",
+            "origin": "origin200",
+            "asset": "asset105",
+            "asset_size": 20,
+            "cacheserver": "cacheserver45",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request67": {
+            "initiated_at": 109,
+            "client": "client101",
+            "origin": "origin64",
+            "asset": "asset174",
+            "asset_size": 410,
+            "cacheserver": "cacheserver7",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request90": {
+            "initiated_at": 107,
+            "client": "client58",
+            "origin": "origin187",
+            "asset": "asset91",
+            "asset_size": 440,
+            "cacheserver": "cacheserver4",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request40": {
+            "initiated_at": 108,
+            "client": "client39",
+            "origin": "origin112",
+            "asset": "asset109",
+            "asset_size": 290,
+            "cacheserver": "cacheserver15",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request62": {
+            "initiated_at": 104,
+            "client": "client169",
+            "origin": "origin163",
+            "asset": "asset66",
+            "asset_size": 70,
+            "cacheserver": "cacheserver3",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request82": {
+            "initiated_at": 102,
+            "client": "client17",
+            "origin": "origin116",
+            "asset": "asset78",
+            "asset_size": 250,
+            "cacheserver": "cacheserver10",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request65": {
+            "initiated_at": 109,
+            "client": "client158",
+            "origin": "origin66",
+            "asset": "asset64",
+            "asset_size": 230,
+            "cacheserver": "cacheserver6",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request110": {
+            "initiated_at": 107,
+            "client": "client174",
+            "origin": "origin104",
+            "asset": "asset289",
+            "asset_size": 20,
+            "cacheserver": "cacheserver10",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request8": {
+            "initiated_at": 110,
+            "client": "client165",
+            "origin": "origin179",
+            "asset": "asset146",
+            "asset_size": 210,
+            "cacheserver": "cacheserver1",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request193": {
+            "initiated_at": 109,
+            "client": "client151",
+            "origin": "origin76",
+            "asset": "asset38",
+            "asset_size": 430,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request188": {
+            "initiated_at": 104,
+            "client": "client83",
+            "origin": "origin136",
+            "asset": "asset158",
+            "asset_size": 290,
+            "cacheserver": "cacheserver3",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request150": {
+            "initiated_at": 102,
+            "client": "client67",
+            "origin": "origin84",
+            "asset": "asset8",
+            "asset_size": 140,
+            "cacheserver": "cacheserver12",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request97": {
+            "initiated_at": 109,
+            "client": "client18",
+            "origin": "origin95",
+            "asset": "asset97",
+            "asset_size": 110,
+            "cacheserver": "cacheserver11",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request191": {
+            "initiated_at": 110,
+            "client": "client176",
+            "origin": "origin66",
+            "asset": "asset149",
+            "asset_size": 100,
+            "cacheserver": "cacheserver9",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request61": {
+            "initiated_at": 95,
+            "client": "client42",
+            "origin": "origin111",
+            "asset": "asset259",
+            "asset_size": 350,
+            "cacheserver": "cacheserver4",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request175": {
+            "initiated_at": 110,
+            "client": "client78",
+            "origin": "origin92",
+            "asset": "asset140",
+            "asset_size": 60,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request140": {
+            "initiated_at": 110,
+            "client": "client99",
+            "origin": "origin47",
+            "asset": "asset221",
+            "asset_size": 420,
+            "cacheserver": "cacheserver1",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request9": {
+            "initiated_at": 100,
+            "client": "client76",
+            "origin": "origin160",
+            "asset": "asset37",
+            "asset_size": 240,
+            "cacheserver": "cacheserver7",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request123": {
+            "initiated_at": 108,
+            "client": "client95",
+            "origin": "origin80",
+            "asset": "asset149",
+            "asset_size": 100,
+            "cacheserver": "cacheserver27",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request145": {
+            "initiated_at": 110,
+            "client": "client5",
+            "origin": "origin181",
+            "asset": "asset36",
+            "asset_size": 70,
+            "cacheserver": "cacheserver31",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request107": {
+            "initiated_at": 102,
+            "client": "client181",
+            "origin": "origin169",
+            "asset": "asset261",
+            "asset_size": 300,
+            "cacheserver": "cacheserver21",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request42": {
+            "initiated_at": 107,
+            "client": "client122",
+            "origin": "origin19",
+            "asset": "asset47",
+            "asset_size": 470,
+            "cacheserver": "cacheserver6",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request198": {
+            "initiated_at": 101,
+            "client": "client81",
+            "origin": "origin58",
+            "asset": "asset205",
+            "asset_size": 500,
+            "cacheserver": "cacheserver3",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request17": {
+            "initiated_at": 110,
+            "client": "client158",
+            "origin": "origin186",
+            "asset": "asset124",
+            "asset_size": 410,
+            "cacheserver": "cacheserver6",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request49": {
+            "initiated_at": 110,
+            "client": "client165",
+            "origin": "origin50",
+            "asset": "asset145",
+            "asset_size": 380,
+            "cacheserver": "cacheserver1",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request122": {
+            "initiated_at": 106,
+            "client": "client131",
+            "origin": "origin75",
+            "asset": "asset156",
+            "asset_size": 280,
+            "cacheserver": "cacheserver4",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request99": {
+            "initiated_at": 108,
+            "client": "client72",
+            "origin": "origin94",
+            "asset": "asset180",
+            "asset_size": 70,
+            "cacheserver": "cacheserver7",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request163": {
+            "initiated_at": 104,
+            "client": "client141",
+            "origin": "origin29",
+            "asset": "asset23",
+            "asset_size": 340,
+            "cacheserver": "cacheserver4",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request35": {
+            "initiated_at": 109,
+            "client": "client54",
+            "origin": "origin178",
+            "asset": "asset46",
+            "asset_size": 360,
+            "cacheserver": "cacheserver24",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request58": {
+            "initiated_at": 104,
+            "client": "client33",
+            "origin": "origin94",
+            "asset": "asset279",
+            "asset_size": 180,
+            "cacheserver": "cacheserver6",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request154": {
+            "initiated_at": 110,
+            "client": "client22",
+            "origin": "origin75",
+            "asset": "asset146",
+            "asset_size": 210,
+            "cacheserver": "cacheserver1",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request10": {
+            "initiated_at": 108,
+            "client": "client145",
+            "origin": "origin192",
+            "asset": "asset111",
+            "asset_size": 280,
+            "cacheserver": "cacheserver5",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request94": {
+            "initiated_at": 110,
+            "client": "client127",
+            "origin": "origin129",
+            "asset": "asset219",
+            "asset_size": 120,
+            "cacheserver": "cacheserver4",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request147": {
+            "initiated_at": 110,
+            "client": "client194",
+            "origin": "origin4",
+            "asset": "asset267",
+            "asset_size": 420,
+            "cacheserver": "cacheserver20",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request103": {
+            "initiated_at": 110,
+            "client": "client139",
+            "origin": "origin170",
+            "asset": "asset168",
+            "asset_size": 140,
+            "cacheserver": "cacheserver7",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request31": {
+            "initiated_at": 106,
+            "client": "client70",
+            "origin": "origin36",
+            "asset": "asset118",
+            "asset_size": 460,
+            "cacheserver": "cacheserver16",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request131": {
+            "initiated_at": 106,
+            "client": "client113",
+            "origin": "origin39",
+            "asset": "asset295",
+            "asset_size": 320,
+            "cacheserver": "cacheserver15",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request37": {
+            "initiated_at": 108,
+            "client": "client191",
+            "origin": "origin111",
+            "asset": "asset36",
+            "asset_size": 70,
+            "cacheserver": "cacheserver5",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request60": {
+            "initiated_at": 109,
+            "client": "client15",
+            "origin": "origin20",
+            "asset": "asset266",
+            "asset_size": 90,
+            "cacheserver": "cacheserver1",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request126": {
+            "initiated_at": 110,
+            "client": "client190",
+            "origin": "origin101",
+            "asset": "asset262",
+            "asset_size": 370,
+            "cacheserver": "cacheserver7",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request77": {
+            "initiated_at": 104,
+            "client": "client68",
+            "origin": "origin19",
+            "asset": "asset40",
+            "asset_size": 150,
+            "cacheserver": "cacheserver16",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request83": {
+            "initiated_at": 106,
+            "client": "client95",
+            "origin": "origin114",
+            "asset": "asset145",
+            "asset_size": 380,
+            "cacheserver": "cacheserver27",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request50": {
+            "initiated_at": 110,
+            "client": "client88",
+            "origin": "origin130",
+            "asset": "asset30",
+            "asset_size": 450,
+            "cacheserver": "cacheserver7",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request121": {
+            "initiated_at": 107,
+            "client": "client101",
+            "origin": "origin191",
+            "asset": "asset158",
+            "asset_size": 290,
+            "cacheserver": "cacheserver10",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request52": {
+            "initiated_at": 109,
+            "client": "client54",
+            "origin": "origin190",
+            "asset": "asset84",
+            "asset_size": 280,
+            "cacheserver": "cacheserver24",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request81": {
+            "initiated_at": 109,
+            "client": "client178",
+            "origin": "origin67",
+            "asset": "asset171",
+            "asset_size": 70,
+            "cacheserver": "cacheserver4",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request181": {
+            "initiated_at": 106,
+            "client": "client49",
+            "origin": "origin87",
+            "asset": "asset235",
+            "asset_size": 390,
+            "cacheserver": "cacheserver12",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request189": {
+            "initiated_at": 109,
+            "client": "client153",
+            "origin": "origin90",
+            "asset": "asset237",
+            "asset_size": 280,
+            "cacheserver": "cacheserver25",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request26": {
+            "initiated_at": 107,
+            "client": "client45",
+            "origin": "origin143",
+            "asset": "asset199",
+            "asset_size": 210,
+            "cacheserver": "cacheserver1",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request174": {
+            "initiated_at": 103,
+            "client": "client11",
+            "origin": "origin108",
+            "asset": "asset128",
+            "asset_size": 130,
+            "cacheserver": "cacheserver1",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request75": {
+            "initiated_at": 105,
+            "client": "client72",
+            "origin": "origin158",
+            "asset": "asset130",
+            "asset_size": 110,
+            "cacheserver": "cacheserver7",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request136": {
+            "initiated_at": 109,
+            "client": "client36",
+            "origin": "origin54",
+            "asset": "asset235",
+            "asset_size": 390,
+            "cacheserver": "cacheserver22",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request76": {
+            "initiated_at": 99,
+            "client": "client92",
+            "origin": "origin132",
+            "asset": "asset145",
+            "asset_size": 380,
+            "cacheserver": "cacheserver6",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request165": {
+            "initiated_at": 110,
+            "client": "client26",
+            "origin": "origin15",
+            "asset": "asset208",
+            "asset_size": 250,
+            "cacheserver": "cacheserver11",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request111": {
+            "initiated_at": 110,
+            "client": "client174",
+            "origin": "origin125",
+            "asset": "asset287",
+            "asset_size": 80,
+            "cacheserver": "cacheserver10",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request53": {
+            "initiated_at": 105,
+            "client": "client178",
+            "origin": "origin130",
+            "asset": "asset59",
+            "asset_size": 270,
+            "cacheserver": "cacheserver4",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request101": {
+            "initiated_at": 110,
+            "client": "client167",
+            "origin": "origin191",
+            "asset": "asset116",
+            "asset_size": 90,
+            "cacheserver": "cacheserver22",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request36": {
+            "initiated_at": 108,
+            "client": "client171",
+            "origin": "origin42",
+            "asset": "asset21",
+            "asset_size": 390,
+            "cacheserver": "cacheserver4",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request44": {
+            "initiated_at": 109,
+            "client": "client190",
+            "origin": "origin107",
+            "asset": "asset9",
+            "asset_size": 70,
+            "cacheserver": "cacheserver7",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request148": {
+            "initiated_at": 104,
+            "client": "client194",
+            "origin": "origin35",
+            "asset": "asset15",
+            "asset_size": 60,
+            "cacheserver": "cacheserver20",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request102": {
+            "initiated_at": 109,
+            "client": "client28",
+            "origin": "origin36",
+            "asset": "asset281",
+            "asset_size": 160,
+            "cacheserver": "cacheserver5",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request3": {
+            "initiated_at": 109,
+            "client": "client185",
+            "origin": "origin30",
+            "asset": "asset33",
+            "asset_size": 220,
+            "cacheserver": "cacheserver2",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request85": {
+            "initiated_at": 109,
+            "client": "client12",
+            "origin": "origin173",
+            "asset": "asset88",
+            "asset_size": 420,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request186": {
+            "initiated_at": 110,
+            "client": "client81",
+            "origin": "origin15",
+            "asset": "asset32",
+            "asset_size": 310,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request14": {
+            "initiated_at": 110,
+            "client": "client128",
+            "origin": "origin161",
+            "asset": "asset245",
+            "asset_size": 410,
+            "cacheserver": "cacheserver1",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request192": {
+            "initiated_at": 110,
+            "client": "client115",
+            "origin": "origin41",
+            "asset": "asset298",
+            "asset_size": 480,
+            "cacheserver": "cacheserver4",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request151": {
+            "initiated_at": 107,
+            "client": "client180",
+            "origin": "origin178",
+            "asset": "asset208",
+            "asset_size": 250,
+            "cacheserver": "cacheserver20",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request162": {
+            "initiated_at": 109,
+            "client": "client176",
+            "origin": "origin180",
+            "asset": "asset265",
+            "asset_size": 290,
+            "cacheserver": "cacheserver9",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request138": {
+            "initiated_at": 103,
+            "client": "client183",
+            "origin": "origin107",
+            "asset": "asset259",
+            "asset_size": 350,
+            "cacheserver": "cacheserver19",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request51": {
+            "initiated_at": 108,
+            "client": "client200",
+            "origin": "origin133",
+            "asset": "asset116",
+            "asset_size": 90,
+            "cacheserver": "cacheserver2",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request196": {
+            "initiated_at": 109,
+            "client": "client45",
+            "origin": "origin55",
+            "asset": "asset70",
+            "asset_size": 130,
+            "cacheserver": "cacheserver1",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request167": {
+            "initiated_at": 110,
+            "client": "client12",
+            "origin": "origin28",
+            "asset": "asset128",
+            "asset_size": 130,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request177": {
+            "initiated_at": 108,
+            "client": "client180",
+            "origin": "origin102",
+            "asset": "asset145",
+            "asset_size": 380,
+            "cacheserver": "cacheserver20",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request92": {
+            "initiated_at": 105,
+            "client": "client64",
+            "origin": "origin186",
+            "asset": "asset38",
+            "asset_size": 430,
+            "cacheserver": "cacheserver3",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request200": {
+            "initiated_at": 109,
+            "client": "client24",
+            "origin": "origin163",
+            "asset": "asset46",
+            "asset_size": 360,
+            "cacheserver": "cacheserver3",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request16": {
+            "initiated_at": 108,
+            "client": "client143",
+            "origin": "origin183",
+            "asset": "asset59",
+            "asset_size": 270,
+            "cacheserver": "cacheserver28",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request197": {
+            "initiated_at": 105,
+            "client": "client7",
+            "origin": "origin128",
+            "asset": "asset147",
+            "asset_size": 120,
+            "cacheserver": "cacheserver1",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request43": {
+            "initiated_at": 110,
+            "client": "client38",
+            "origin": "origin191",
+            "asset": "asset282",
+            "asset_size": 100,
+            "cacheserver": "cacheserver6",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request195": {
+            "initiated_at": 110,
+            "client": "client47",
+            "origin": "origin145",
+            "asset": "asset169",
+            "asset_size": 210,
+            "cacheserver": "cacheserver5",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request66": {
+            "initiated_at": 102,
+            "client": "client50",
+            "origin": "origin86",
+            "asset": "asset37",
+            "asset_size": 240,
+            "cacheserver": "cacheserver19",
+            "status": "Checking for the requested asset in Cache",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request170": {
+            "initiated_at": 108,
+            "client": "client129",
+            "origin": "origin130",
+            "asset": "asset143",
+            "asset_size": 410,
+            "cacheserver": "cacheserver13",
+            "status": "Establishing TCP connection to cache server",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        }
+    },
+    "cacheserver_status": {
+        "cacheserver6": {
+            "cache_hit": 0,
+            "cache_miss": 1,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 25600,
+            "output_throughput_available": 23552,
+            "number_of_active_inbound_connections": 156,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver3": {
+            "cache_hit": 3,
+            "cache_miss": 15,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 12288,
+            "output_throughput_available": 15360,
+            "number_of_active_inbound_connections": 259,
+            "number_of_active_outbound_connections": 6,
+            "total_data_transferred": 0
+        },
+        "cacheserver2": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 26624,
+            "output_throughput_available": 20480,
+            "number_of_active_inbound_connections": 130,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver8": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 18432,
+            "output_throughput_available": 16384,
+            "number_of_active_inbound_connections": 37,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver7": {
+            "cache_hit": 0,
+            "cache_miss": 1,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 21504,
+            "output_throughput_available": 24576,
+            "number_of_active_inbound_connections": 170,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver4": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 23552,
+            "output_throughput_available": 29696,
+            "number_of_active_inbound_connections": 231,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver45": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 14336,
+            "output_throughput_available": 19456,
+            "number_of_active_inbound_connections": 20,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver21": {
+            "cache_hit": 0,
+            "cache_miss": 3,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 12288,
+            "output_throughput_available": 14336,
+            "number_of_active_inbound_connections": 68,
+            "number_of_active_outbound_connections": 2,
+            "total_data_transferred": 0
+        },
+        "cacheserver13": {
+            "cache_hit": 1,
+            "cache_miss": 2,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 29696,
+            "output_throughput_available": 29696,
+            "number_of_active_inbound_connections": 29,
+            "number_of_active_outbound_connections": 1,
+            "total_data_transferred": 0
+        },
+        "cacheserver11": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 27648,
+            "output_throughput_available": 23552,
+            "number_of_active_inbound_connections": 69,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver18": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 22528,
+            "output_throughput_available": 23552,
+            "number_of_active_inbound_connections": 24,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver5": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 17408,
+            "output_throughput_available": 22528,
+            "number_of_active_inbound_connections": 137,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver25": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 25600,
+            "output_throughput_available": 19456,
+            "number_of_active_inbound_connections": 31,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver12": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 24576,
+            "output_throughput_available": 21504,
+            "number_of_active_inbound_connections": 85,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver14": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 26624,
+            "output_throughput_available": 27648,
+            "number_of_active_inbound_connections": 22,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver1": {
+            "cache_hit": 0,
+            "cache_miss": 1,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 10240,
+            "output_throughput_available": 10240,
+            "number_of_active_inbound_connections": 166,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver27": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 24576,
+            "output_throughput_available": 14336,
+            "number_of_active_inbound_connections": 68,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver22": {
+            "cache_hit": 4,
+            "cache_miss": 4,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 26624,
+            "output_throughput_available": 29696,
+            "number_of_active_inbound_connections": 53,
+            "number_of_active_outbound_connections": 2,
+            "total_data_transferred": 0
+        },
+        "cacheserver16": {
+            "cache_hit": 2,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 29696,
+            "output_throughput_available": 15360,
+            "number_of_active_inbound_connections": 32,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver19": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 23552,
+            "output_throughput_available": 12288,
+            "number_of_active_inbound_connections": 54,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver23": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 18432,
+            "output_throughput_available": 17408,
+            "number_of_active_inbound_connections": 14,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver24": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 28672,
+            "output_throughput_available": 17408,
+            "number_of_active_inbound_connections": 36,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver28": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 16384,
+            "output_throughput_available": 14336,
+            "number_of_active_inbound_connections": 20,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver10": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 28672,
+            "output_throughput_available": 27648,
+            "number_of_active_inbound_connections": 66,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver9": {
+            "cache_hit": 1,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 10240,
+            "output_throughput_available": 28672,
+            "number_of_active_inbound_connections": 59,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver15": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 27648,
+            "output_throughput_available": 18432,
+            "number_of_active_inbound_connections": 84,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver17": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 22528,
+            "output_throughput_available": 12288,
+            "number_of_active_inbound_connections": 27,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver20": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 20480,
+            "output_throughput_available": 20480,
+            "number_of_active_inbound_connections": 54,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        },
+        "cacheserver31": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 18432,
+            "output_throughput_available": 15360,
+            "number_of_active_inbound_connections": 12,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 0
+        }
+    }
+}

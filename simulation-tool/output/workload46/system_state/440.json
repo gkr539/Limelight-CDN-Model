@@ -1,0 +1,1620 @@
+{
+    "tick_duration": 10,
+    "snapshot_time": 440,
+    "workload": "workload46",
+    "total_data_transferred": 4803.681617233951,
+    "requests_status": {
+        "request13": {
+            "initiated_at": 8,
+            "client": "client20",
+            "origin": "origin51",
+            "asset": "asset9",
+            "asset_size": 450,
+            "cacheserver": "cacheserver35",
+            "status": "Transferring asset to client",
+            "input_throughput_being_used": {
+                "client": 512.0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 512.0
+            },
+            "size_transferred_to_client": 199.14675767918146,
+            "completed": "No"
+        },
+        "request91": {
+            "initiated_at": 0,
+            "client": "client161",
+            "origin": "origin45",
+            "asset": "asset246",
+            "asset_size": 490,
+            "cacheserver": "cacheserver8",
+            "status": "Transferring asset to client",
+            "input_throughput_being_used": {
+                "client": 1024.0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 1024.0
+            },
+            "size_transferred_to_client": 416.34655532358977,
+            "completed": "No"
+        },
+        "request178": {
+            "initiated_at": 0,
+            "client": "client89",
+            "origin": "origin56",
+            "asset": "asset235",
+            "asset_size": 490,
+            "cacheserver": "cacheserver1",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request112": {
+            "initiated_at": 8,
+            "client": "client66",
+            "origin": "origin78",
+            "asset": "asset158",
+            "asset_size": 390,
+            "cacheserver": "cacheserver12",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request9": {
+            "initiated_at": 0,
+            "client": "client104",
+            "origin": "origin47",
+            "asset": "asset101",
+            "asset_size": 460,
+            "cacheserver": "cacheserver10",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request127": {
+            "initiated_at": 0,
+            "client": "client87",
+            "origin": "origin22",
+            "asset": "asset204",
+            "asset_size": 110,
+            "cacheserver": "cacheserver1",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request37": {
+            "initiated_at": 0,
+            "client": "client29",
+            "origin": "origin129",
+            "asset": "asset284",
+            "asset_size": 360,
+            "cacheserver": "cacheserver10",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request89": {
+            "initiated_at": 0,
+            "client": "client17",
+            "origin": "origin33",
+            "asset": "asset126",
+            "asset_size": 440,
+            "cacheserver": "cacheserver3",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request35": {
+            "initiated_at": 0,
+            "client": "client4",
+            "origin": "origin159",
+            "asset": "asset228",
+            "asset_size": 40,
+            "cacheserver": "cacheserver5",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request179": {
+            "initiated_at": 0,
+            "client": "client22",
+            "origin": "origin46",
+            "asset": "asset119",
+            "asset_size": 140,
+            "cacheserver": "cacheserver27",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 112
+        },
+        "request173": {
+            "initiated_at": 0,
+            "client": "client122",
+            "origin": "origin98",
+            "asset": "asset104",
+            "asset_size": 480,
+            "cacheserver": "cacheserver9",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request128": {
+            "initiated_at": 0,
+            "client": "client163",
+            "origin": "origin197",
+            "asset": "asset103",
+            "asset_size": 200,
+            "cacheserver": "cacheserver6",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request114": {
+            "initiated_at": 0,
+            "client": "client20",
+            "origin": "origin54",
+            "asset": "asset289",
+            "asset_size": 500,
+            "cacheserver": "cacheserver35",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request147": {
+            "initiated_at": 0,
+            "client": "client71",
+            "origin": "origin112",
+            "asset": "asset140",
+            "asset_size": 350,
+            "cacheserver": "cacheserver18",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request30": {
+            "initiated_at": 0,
+            "client": "client15",
+            "origin": "origin114",
+            "asset": "asset235",
+            "asset_size": 490,
+            "cacheserver": "cacheserver25",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request57": {
+            "initiated_at": 0,
+            "client": "client86",
+            "origin": "origin72",
+            "asset": "asset51",
+            "asset_size": 230,
+            "cacheserver": "cacheserver10",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request18": {
+            "initiated_at": 0,
+            "client": "client9",
+            "origin": "origin184",
+            "asset": "asset31",
+            "asset_size": 290,
+            "cacheserver": "cacheserver11",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request100": {
+            "initiated_at": 0,
+            "client": "client189",
+            "origin": "origin136",
+            "asset": "asset161",
+            "asset_size": 140,
+            "cacheserver": "cacheserver21",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 361
+        },
+        "request117": {
+            "initiated_at": 8,
+            "client": "client182",
+            "origin": "origin83",
+            "asset": "asset298",
+            "asset_size": 220,
+            "cacheserver": "cacheserver4",
+            "status": "Transferring asset to client",
+            "input_throughput_being_used": {
+                "client": 512.0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 512.0
+            },
+            "size_transferred_to_client": 214.37209302325567,
+            "completed": "No"
+        },
+        "request54": {
+            "initiated_at": 0,
+            "client": "client85",
+            "origin": "origin53",
+            "asset": "asset245",
+            "asset_size": 500,
+            "cacheserver": "cacheserver10",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request172": {
+            "initiated_at": 0,
+            "client": "client119",
+            "origin": "origin25",
+            "asset": "asset109",
+            "asset_size": 30,
+            "cacheserver": "cacheserver3",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request44": {
+            "initiated_at": 0,
+            "client": "client173",
+            "origin": "origin68",
+            "asset": "asset279",
+            "asset_size": 160,
+            "cacheserver": "cacheserver6",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request138": {
+            "initiated_at": 0,
+            "client": "client151",
+            "origin": "origin175",
+            "asset": "asset72",
+            "asset_size": 430,
+            "cacheserver": "cacheserver14",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request81": {
+            "initiated_at": 0,
+            "client": "client7",
+            "origin": "origin128",
+            "asset": "asset282",
+            "asset_size": 450,
+            "cacheserver": "cacheserver14",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request168": {
+            "initiated_at": 8,
+            "client": "client133",
+            "origin": "origin10",
+            "asset": "asset101",
+            "asset_size": 460,
+            "cacheserver": "cacheserver2",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request187": {
+            "initiated_at": 0,
+            "client": "client57",
+            "origin": "origin151",
+            "asset": "asset60",
+            "asset_size": 350,
+            "cacheserver": "cacheserver51",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request70": {
+            "initiated_at": 0,
+            "client": "client10",
+            "origin": "origin107",
+            "asset": "asset42",
+            "asset_size": 130,
+            "cacheserver": "cacheserver15",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 140
+        },
+        "request200": {
+            "initiated_at": 0,
+            "client": "client85",
+            "origin": "origin115",
+            "asset": "asset137",
+            "asset_size": 30,
+            "cacheserver": "cacheserver10",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 83
+        },
+        "request159": {
+            "initiated_at": 0,
+            "client": "client39",
+            "origin": "origin169",
+            "asset": "asset108",
+            "asset_size": 180,
+            "cacheserver": "cacheserver3",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 219
+        },
+        "request63": {
+            "initiated_at": 0,
+            "client": "client69",
+            "origin": "origin5",
+            "asset": "asset141",
+            "asset_size": 480,
+            "cacheserver": "cacheserver6",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request175": {
+            "initiated_at": 0,
+            "client": "client36",
+            "origin": "origin150",
+            "asset": "asset82",
+            "asset_size": 270,
+            "cacheserver": "cacheserver1",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request79": {
+            "initiated_at": 8,
+            "client": "client66",
+            "origin": "origin87",
+            "asset": "asset121",
+            "asset_size": 240,
+            "cacheserver": "cacheserver12",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request16": {
+            "initiated_at": 0,
+            "client": "client104",
+            "origin": "origin24",
+            "asset": "asset291",
+            "asset_size": 70,
+            "cacheserver": "cacheserver10",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request118": {
+            "initiated_at": 0,
+            "client": "client103",
+            "origin": "origin26",
+            "asset": "asset89",
+            "asset_size": 240,
+            "cacheserver": "cacheserver1",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 268
+        },
+        "request80": {
+            "initiated_at": 0,
+            "client": "client80",
+            "origin": "origin91",
+            "asset": "asset103",
+            "asset_size": 200,
+            "cacheserver": "cacheserver15",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 396
+        },
+        "request51": {
+            "initiated_at": 0,
+            "client": "client23",
+            "origin": "origin83",
+            "asset": "asset110",
+            "asset_size": 200,
+            "cacheserver": "cacheserver4",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 111
+        },
+        "request120": {
+            "initiated_at": 8,
+            "client": "client128",
+            "origin": "origin187",
+            "asset": "asset172",
+            "asset_size": 420,
+            "cacheserver": "cacheserver1",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request163": {
+            "initiated_at": 0,
+            "client": "client156",
+            "origin": "origin88",
+            "asset": "asset266",
+            "asset_size": 350,
+            "cacheserver": "cacheserver29",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request14": {
+            "initiated_at": 0,
+            "client": "client62",
+            "origin": "origin195",
+            "asset": "asset263",
+            "asset_size": 380,
+            "cacheserver": "cacheserver12",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request34": {
+            "initiated_at": 8,
+            "client": "client121",
+            "origin": "origin69",
+            "asset": "asset268",
+            "asset_size": 400,
+            "cacheserver": "cacheserver5",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request26": {
+            "initiated_at": 8,
+            "client": "client91",
+            "origin": "origin167",
+            "asset": "asset274",
+            "asset_size": 420,
+            "cacheserver": "cacheserver4",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request132": {
+            "initiated_at": 8,
+            "client": "client14",
+            "origin": "origin124",
+            "asset": "asset239",
+            "asset_size": 120,
+            "cacheserver": "cacheserver8",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request59": {
+            "initiated_at": 8,
+            "client": "client121",
+            "origin": "origin82",
+            "asset": "asset112",
+            "asset_size": 100,
+            "cacheserver": "cacheserver5",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request94": {
+            "initiated_at": 8,
+            "client": "client44",
+            "origin": "origin109",
+            "asset": "asset30",
+            "asset_size": 140,
+            "cacheserver": "cacheserver17",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request129": {
+            "initiated_at": 8,
+            "client": "client149",
+            "origin": "origin29",
+            "asset": "asset237",
+            "asset_size": 30,
+            "cacheserver": "cacheserver12",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request103": {
+            "initiated_at": 8,
+            "client": "client47",
+            "origin": "origin111",
+            "asset": "asset145",
+            "asset_size": 210,
+            "cacheserver": "cacheserver23",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request55": {
+            "initiated_at": 8,
+            "client": "client91",
+            "origin": "origin84",
+            "asset": "asset211",
+            "asset_size": 360,
+            "cacheserver": "cacheserver4",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request50": {
+            "initiated_at": 8,
+            "client": "client40",
+            "origin": "origin5",
+            "asset": "asset5",
+            "asset_size": 230,
+            "cacheserver": "cacheserver4",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 134
+        },
+        "request23": {
+            "initiated_at": 8,
+            "client": "client127",
+            "origin": "origin151",
+            "asset": "asset116",
+            "asset_size": 370,
+            "cacheserver": "cacheserver6",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 242
+        },
+        "request85": {
+            "initiated_at": 8,
+            "client": "client19",
+            "origin": "origin8",
+            "asset": "asset293",
+            "asset_size": 40,
+            "cacheserver": "cacheserver10",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request169": {
+            "initiated_at": 8,
+            "client": "client149",
+            "origin": "origin20",
+            "asset": "asset72",
+            "asset_size": 430,
+            "cacheserver": "cacheserver12",
+            "status": "Transferring asset to client",
+            "input_throughput_being_used": {
+                "client": 1024.0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 1024.0
+            },
+            "size_transferred_to_client": 388.0238095238086,
+            "completed": "No"
+        },
+        "request149": {
+            "initiated_at": 8,
+            "client": "client122",
+            "origin": "origin47",
+            "asset": "asset1",
+            "asset_size": 480,
+            "cacheserver": "cacheserver9",
+            "status": "Transferring asset to client",
+            "input_throughput_being_used": {
+                "client": 1024.0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 1024.0
+            },
+            "size_transferred_to_client": 428.8272921108731,
+            "completed": "No"
+        },
+        "request110": {
+            "initiated_at": 8,
+            "client": "client101",
+            "origin": "origin144",
+            "asset": "asset74",
+            "asset_size": 230,
+            "cacheserver": "cacheserver13",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 256
+        },
+        "request191": {
+            "initiated_at": 8,
+            "client": "client151",
+            "origin": "origin198",
+            "asset": "asset30",
+            "asset_size": 140,
+            "cacheserver": "cacheserver14",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request119": {
+            "initiated_at": 8,
+            "client": "client106",
+            "origin": "origin145",
+            "asset": "asset183",
+            "asset_size": 340,
+            "cacheserver": "cacheserver7",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request10": {
+            "initiated_at": 8,
+            "client": "client157",
+            "origin": "origin150",
+            "asset": "asset100",
+            "asset_size": 40,
+            "cacheserver": "cacheserver1",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request188": {
+            "initiated_at": 8,
+            "client": "client37",
+            "origin": "origin26",
+            "asset": "asset64",
+            "asset_size": 420,
+            "cacheserver": "cacheserver10",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request62": {
+            "initiated_at": 8,
+            "client": "client58",
+            "origin": "origin50",
+            "asset": "asset120",
+            "asset_size": 370,
+            "cacheserver": "cacheserver12",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request123": {
+            "initiated_at": 8,
+            "client": "client86",
+            "origin": "origin176",
+            "asset": "asset1",
+            "asset_size": 480,
+            "cacheserver": "cacheserver10",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request4": {
+            "initiated_at": 8,
+            "client": "client163",
+            "origin": "origin118",
+            "asset": "asset161",
+            "asset_size": 140,
+            "cacheserver": "cacheserver6",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 130
+        },
+        "request8": {
+            "initiated_at": 8,
+            "client": "client119",
+            "origin": "origin76",
+            "asset": "asset90",
+            "asset_size": 130,
+            "cacheserver": "cacheserver3",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 178
+        },
+        "request90": {
+            "initiated_at": 8,
+            "client": "client30",
+            "origin": "origin117",
+            "asset": "asset170",
+            "asset_size": 310,
+            "cacheserver": "cacheserver21",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request161": {
+            "initiated_at": 8,
+            "client": "client187",
+            "origin": "origin143",
+            "asset": "asset18",
+            "asset_size": 320,
+            "cacheserver": "cacheserver50",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 374
+        },
+        "request185": {
+            "initiated_at": 8,
+            "client": "client80",
+            "origin": "origin172",
+            "asset": "asset262",
+            "asset_size": 470,
+            "cacheserver": "cacheserver15",
+            "status": "Transferring asset to client",
+            "input_throughput_being_used": {
+                "client": 1024.0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 1024.0
+            },
+            "size_transferred_to_client": 236.96510957324227,
+            "completed": "No"
+        },
+        "request157": {
+            "initiated_at": 8,
+            "client": "client102",
+            "origin": "origin122",
+            "asset": "asset210",
+            "asset_size": 400,
+            "cacheserver": "cacheserver11",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request145": {
+            "initiated_at": 8,
+            "client": "client85",
+            "origin": "origin68",
+            "asset": "asset251",
+            "asset_size": 230,
+            "cacheserver": "cacheserver10",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request6": {
+            "initiated_at": 8,
+            "client": "client112",
+            "origin": "origin29",
+            "asset": "asset37",
+            "asset_size": 240,
+            "cacheserver": "cacheserver13",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 266
+        },
+        "request131": {
+            "initiated_at": 8,
+            "client": "client149",
+            "origin": "origin80",
+            "asset": "asset82",
+            "asset_size": 270,
+            "cacheserver": "cacheserver12",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request65": {
+            "initiated_at": 8,
+            "client": "client110",
+            "origin": "origin57",
+            "asset": "asset161",
+            "asset_size": 140,
+            "cacheserver": "cacheserver11",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request68": {
+            "initiated_at": 8,
+            "client": "client31",
+            "origin": "origin180",
+            "asset": "asset187",
+            "asset_size": 180,
+            "cacheserver": "cacheserver10",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request29": {
+            "initiated_at": 8,
+            "client": "client37",
+            "origin": "origin114",
+            "asset": "asset34",
+            "asset_size": 460,
+            "cacheserver": "cacheserver10",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request2": {
+            "initiated_at": 8,
+            "client": "client150",
+            "origin": "origin170",
+            "asset": "asset271",
+            "asset_size": 430,
+            "cacheserver": "cacheserver11",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        },
+        "request76": {
+            "initiated_at": 8,
+            "client": "client38",
+            "origin": "origin62",
+            "asset": "asset15",
+            "asset_size": 420,
+            "cacheserver": "cacheserver11",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "No"
+        }
+    },
+    "cacheserver_status": {
+        "cacheserver35": {
+            "cache_hit": 1,
+            "cache_miss": 1,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 512,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 1536,
+            "number_of_active_inbound_connections": 3,
+            "number_of_active_outbound_connections": 1,
+            "total_data_transferred": 199.14675767918146
+        },
+        "cacheserver8": {
+            "cache_hit": 1,
+            "cache_miss": 1,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 1024,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 0,
+            "number_of_active_inbound_connections": 2,
+            "number_of_active_outbound_connections": 1,
+            "total_data_transferred": 416.34655532358977
+        },
+        "cacheserver1": {
+            "cache_hit": 1,
+            "cache_miss": 5,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 1024,
+            "number_of_active_inbound_connections": 6,
+            "number_of_active_outbound_connections": 5,
+            "total_data_transferred": 240
+        },
+        "cacheserver12": {
+            "cache_hit": 1,
+            "cache_miss": 6,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 1024,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 0,
+            "number_of_active_inbound_connections": 9,
+            "number_of_active_outbound_connections": 6,
+            "total_data_transferred": 388.0238095238086
+        },
+        "cacheserver10": {
+            "cache_hit": 1,
+            "cache_miss": 11,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 2048,
+            "output_throughput_available": 1024,
+            "number_of_active_inbound_connections": 11,
+            "number_of_active_outbound_connections": 11,
+            "total_data_transferred": 30
+        },
+        "cacheserver3": {
+            "cache_hit": 2,
+            "cache_miss": 2,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 2048,
+            "output_throughput_available": 2048,
+            "number_of_active_inbound_connections": 2,
+            "number_of_active_outbound_connections": 2,
+            "total_data_transferred": 310
+        },
+        "cacheserver5": {
+            "cache_hit": 0,
+            "cache_miss": 3,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 1024,
+            "number_of_active_inbound_connections": 4,
+            "number_of_active_outbound_connections": 3,
+            "total_data_transferred": 0
+        },
+        "cacheserver27": {
+            "cache_hit": 1,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 2048,
+            "output_throughput_available": 2048,
+            "number_of_active_inbound_connections": 0,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 140
+        },
+        "cacheserver9": {
+            "cache_hit": 1,
+            "cache_miss": 1,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 1024,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 0,
+            "number_of_active_inbound_connections": 2,
+            "number_of_active_outbound_connections": 1,
+            "total_data_transferred": 428.8272921108731
+        },
+        "cacheserver6": {
+            "cache_hit": 2,
+            "cache_miss": 3,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 2048,
+            "output_throughput_available": 2048,
+            "number_of_active_inbound_connections": 3,
+            "number_of_active_outbound_connections": 3,
+            "total_data_transferred": 510
+        },
+        "cacheserver18": {
+            "cache_hit": 0,
+            "cache_miss": 1,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 2048,
+            "output_throughput_available": 2048,
+            "number_of_active_inbound_connections": 1,
+            "number_of_active_outbound_connections": 1,
+            "total_data_transferred": 0
+        },
+        "cacheserver25": {
+            "cache_hit": 0,
+            "cache_miss": 1,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 2048,
+            "output_throughput_available": 2048,
+            "number_of_active_inbound_connections": 1,
+            "number_of_active_outbound_connections": 1,
+            "total_data_transferred": 0
+        },
+        "cacheserver11": {
+            "cache_hit": 0,
+            "cache_miss": 5,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 1024,
+            "number_of_active_inbound_connections": 5,
+            "number_of_active_outbound_connections": 5,
+            "total_data_transferred": 0
+        },
+        "cacheserver21": {
+            "cache_hit": 0,
+            "cache_miss": 2,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 2048,
+            "number_of_active_inbound_connections": 1,
+            "number_of_active_outbound_connections": 1,
+            "total_data_transferred": 140
+        },
+        "cacheserver4": {
+            "cache_hit": 3,
+            "cache_miss": 2,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 512,
+            "input_throughput_available": 2048,
+            "output_throughput_available": 1536,
+            "number_of_active_inbound_connections": 4,
+            "number_of_active_outbound_connections": 2,
+            "total_data_transferred": 644.3720930232557
+        },
+        "cacheserver14": {
+            "cache_hit": 0,
+            "cache_miss": 3,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 2048,
+            "output_throughput_available": 2048,
+            "number_of_active_inbound_connections": 3,
+            "number_of_active_outbound_connections": 3,
+            "total_data_transferred": 0
+        },
+        "cacheserver2": {
+            "cache_hit": 0,
+            "cache_miss": 1,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 1024,
+            "number_of_active_inbound_connections": 2,
+            "number_of_active_outbound_connections": 1,
+            "total_data_transferred": 0
+        },
+        "cacheserver51": {
+            "cache_hit": 0,
+            "cache_miss": 1,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 2048,
+            "number_of_active_inbound_connections": 1,
+            "number_of_active_outbound_connections": 1,
+            "total_data_transferred": 0
+        },
+        "cacheserver15": {
+            "cache_hit": 3,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 1024,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 0,
+            "number_of_active_inbound_connections": 1,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 566.9651095732422
+        },
+        "cacheserver29": {
+            "cache_hit": 0,
+            "cache_miss": 1,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 2048,
+            "output_throughput_available": 1024,
+            "number_of_active_inbound_connections": 1,
+            "number_of_active_outbound_connections": 1,
+            "total_data_transferred": 0
+        },
+        "cacheserver17": {
+            "cache_hit": 0,
+            "cache_miss": 1,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 1024,
+            "number_of_active_inbound_connections": 1,
+            "number_of_active_outbound_connections": 1,
+            "total_data_transferred": 0
+        },
+        "cacheserver23": {
+            "cache_hit": 0,
+            "cache_miss": 1,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 2048,
+            "number_of_active_inbound_connections": 1,
+            "number_of_active_outbound_connections": 1,
+            "total_data_transferred": 0
+        },
+        "cacheserver13": {
+            "cache_hit": 2,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 1024,
+            "number_of_active_inbound_connections": 0,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 470
+        },
+        "cacheserver7": {
+            "cache_hit": 0,
+            "cache_miss": 1,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 2048,
+            "output_throughput_available": 2048,
+            "number_of_active_inbound_connections": 1,
+            "number_of_active_outbound_connections": 1,
+            "total_data_transferred": 0
+        },
+        "cacheserver50": {
+            "cache_hit": 1,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 2048,
+            "output_throughput_available": 1024,
+            "number_of_active_inbound_connections": 0,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 320
+        }
+    }
+}
