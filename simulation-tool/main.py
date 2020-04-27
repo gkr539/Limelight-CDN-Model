@@ -77,9 +77,11 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                             max_connections_cache = cacheServer_ip[sorted_cacheserver_list[cs][1]]["max_connections"]
                         
                             cacheServer_status = utility.build_cacheServer_status(cacheServer_status, sorted_cacheserver_list[cs][1],cacheServer_ip)
-                    
-                            
-                            if (cacheServer_status[sorted_cacheserver_list[cs][1]]['active_inbound_connections'] + cacheServer_status[sorted_cacheserver_list[cs][1]]['active_outbound_connections'] < max_connections_cache) and (sim_status['connections_client'][requests_ip[req]['client']] < max_connections_client):
+                            # check throughput 
+                            throughput_avail = cacheServer_status[sorted_cacheserver_list[cs][1]]['output_throughput_available']
+                            throughput_limit = cacheServer_ip[sorted_cacheserver_list[cs][1]]["throughput_limit"]
+                            #and (throughput_avail > throughput_limit)
+                            if (cacheServer_status[sorted_cacheserver_list[cs][1]]['active_inbound_connections'] + cacheServer_status[sorted_cacheserver_list[cs][1]]['active_outbound_connections'] < max_connections_cache) and (sim_status['connections_client'][requests_ip[req]['client']] < max_connections_client)and (throughput_avail > throughput_limit) :
                                                                    
                                     cacheServer_used=sorted_cacheserver_list[cs][1]
 
@@ -114,10 +116,18 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                         if(flag==False):
                             req_status[req]['tctc'] += 1
                             req_status[req][t]="Max connections reached. Waiting until connections are available" 
+                            req_status[req]['timeout_count'] +=1
+                            if req_status[req]['timeout_count'] == simulation_ip['simulation1']['timeout']:
+                                req_status[req]['completed'] = 1
+                                req_status[req]['completed_at'] = t
+                                req_status[req][t]= "Request time out"
+                                
+                                
                             continue
 
                 if req_status[req]['stage'] ==  1:
                     if t < req_status[req]['cct']:
+                        req_status[req]['timeout_count'] = 0
                         if t not in req_status[req].keys():
                             req_status[req][t] = 'Checking for the requested asset in Cache'
                         else:
@@ -170,6 +180,9 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                         else:
                             n = throughput_status_time[client_id][te]
                         throughput_to_use = available_throughput/n
+                        
+                        
+                            
                         req_status[req]['input_throughput_being_used']['client'] = throughput_to_use
                         req_status[req]['output_throughput_being_used']['cacheServer'] = throughput_to_use
                         cacheServer_status[req_status[req]['cacheServer']]['output_throughput_used'] = throughput_to_use
@@ -231,6 +244,11 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                             else:
                                 req_status[req]['tcto'] +=1
                                 req_status[req][t]="Max connections reached. Waiting until connections are available"
+                                req_status[req]['timeout_count'] +=1
+                                if req_status[req]['timeout_count'] == simulation_ip['simulation1']['timeout']:
+                                    req_status[req]['completed'] = 1
+                                    req_status[req]['completed_at'] = t
+                                    req_status[req][t]= "Request time out"
                                 continue
                     elif req_status[req]['stage'] == 4 :     
                         if t < req_status[req]['oct']:
@@ -513,8 +531,9 @@ def timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,client
         #line8=live_plotter(tick_intervals, cache_miss, line8, 'Time t','Cache miss','Time t vs Cache miss',simulation_ip['simulation1']['simulation_duration'], request_count)
         line9=live_plotter(tick_intervals,request_list, line9, 'Time t','Active_requests','Time t vs Active_Requests',simulation_ip['simulation1']['simulation_duration'], request_count)
 
-        print("simulation time : "+str(t))
+        #print("simulation time : "+str(t))
         t +=1
+    '''
     for i in active_inbound:         
         utility.visualize(tick_intervals,active_inbound[i], [], 'Time t','Active_inbound_connections','Time t vs Inbound Connections', i ,simulation_ip['simulation1']['simulation_duration'],cacheServer_ip[i]['max_connections']+1, workload)
         utility.visualize(tick_intervals,active_outbound[i], [],'Time t','Active_outbound_connections','Time t vs Outbound Connections', i,simulation_ip['simulation1']['simulation_duration'],cacheServer_ip[i]['max_connections']+1, workload)
@@ -524,7 +543,7 @@ def timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,client
         utility.visualize(tick_intervals, cacheserver_outputthroughputavailable_list[i], [],'Time t','Output_Throughput_used','Time t vs Output_Throughput_Available',i,simulation_ip['simulation1']['simulation_duration'],int(cacheServer_ip[i]['max_input_throughput'])+100, workload)
         utility.visualize(tick_intervals,cache_miss[i], cache_hit[i], 'Time t','Cache hit/miss','Time t vs Cache hit & miss',i,simulation_ip['simulation1']['simulation_duration'], request_count, workload, 'cache_miss','cache_hit')
     utility.visualize(tick_intervals,request_list, [], 'Time t','Active_requests','Time t vs Active_Requests','simulation',simulation_ip['simulation1']['simulation_duration'], request_count, workload)
-
+    '''
 def initializeSimStatus(requests_ip):
     global sim_status
     sim_status['inbound_connections_cacheServer'] = 0
@@ -553,7 +572,8 @@ def main():
     initializeSimStatus(requests_ip)
     timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,clients_ip,origin_ip,workloads)
    
-
+    pprint(req_status)
+    pprint(cacheServer_status)
     
 if __name__ == '__main__':
     main()

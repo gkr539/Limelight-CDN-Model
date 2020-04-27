@@ -130,6 +130,8 @@ def build_request_status(req_status,req,t,requests_ip,assets_ip):
         req_status[req]['output_throughput_being_used'] = {}
         req_status[req]['output_throughput_being_used']['origin'] = 0
         req_status[req]['output_throughput_being_used']['cacheServer'] = 0
+        req_status[req]['timeout_count'] = 0
+        
         
         return req_status
 
