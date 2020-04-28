@@ -1,3 +1,4 @@
-/simulation-tool/output
-/simulation-tool/__pycache__
-/simulation-tool/.DS_Store
+simulation-tool/output/
+simulation-tool/__pycache__/
+.DS_Store/
+simulation-tool/.DS_Store
