@@ -6,6 +6,6 @@
  "tcp_connection_time": 3,
  "workload": "workload1",
  "plot_for_cacheServer": "cacheserver1",
- "timeout" : 3
+ "timeout" : 30
 }
 ]

@@ -78,10 +78,12 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                         
                             cacheServer_status = utility.build_cacheServer_status(cacheServer_status, sorted_cacheserver_list[cs][1],cacheServer_ip)
                             # check throughput 
+                            pprint(cacheServer_status)
                             throughput_avail = cacheServer_status[sorted_cacheserver_list[cs][1]]['output_throughput_available']
                             throughput_limit = cacheServer_ip[sorted_cacheserver_list[cs][1]]["throughput_limit"]
+                            print(throughput_avail)
                             #and (throughput_avail > throughput_limit)
-                            if (cacheServer_status[sorted_cacheserver_list[cs][1]]['active_inbound_connections'] + cacheServer_status[sorted_cacheserver_list[cs][1]]['active_outbound_connections'] < max_connections_cache) and (sim_status['connections_client'][requests_ip[req]['client']] < max_connections_client)and (throughput_avail > throughput_limit) :
+                            if (cacheServer_status[sorted_cacheserver_list[cs][1]]['active_inbound_connections'] + cacheServer_status[sorted_cacheserver_list[cs][1]]['active_outbound_connections'] < max_connections_cache) and (sim_status['connections_client'][requests_ip[req]['client']] < max_connections_client) :
                                                                    
                                     cacheServer_used=sorted_cacheserver_list[cs][1]
 
@@ -95,7 +97,7 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                                         if len(throughput_status_time[client_id]) == 0:
                                             throughput_status_time[client_id][new_t] =throughput_status_time[client_id].get(new_t,0) +  1
                                             throughput_status_time[client_id]['old'] = new_t
-                                            
+                                           
                                         else:
                                             if throughput_status_time[client_id]['old'] > new_t:
                                                 throughput_status_time[client_id]['old'] = new_t
@@ -106,6 +108,23 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                                                 if key != 'old' and key != 'temp_adto' and key > new_t:
                                                     throughput_status_time[client_id][key] +=1
                                             throughput_status_time[client_id][new_t] = req_count
+                                            
+                                        if len(throughput_status_time[cacheServer_used]) == 0:
+                                            throughput_status_time[cacheServer_used][new_t] =throughput_status_time[cacheServer_used].get(new_t,0) +  1
+                                            throughput_status_time[cacheServer_used]['old'] = new_t
+                                           
+                                        else:
+                                            if throughput_status_time[cacheServer_used]['old'] > new_t:
+                                                throughput_status_time[cacheServer_used]['old'] = new_t
+                                            req_count = 1
+                                            for key in throughput_status_time[cacheServer_used]:
+                                                if key != 'old' and key != 'temp_adto' and key <= new_t:
+                                                    req_count += throughput_status_time[cacheServer_used][key]
+                                                if key != 'old' and key != 'temp_adto' and key > new_t:
+                                                    throughput_status_time[cacheServer_used][key] +=1
+                                            throughput_status_time[cacheServer_used][new_t] = req_count
+                                        
+                                        
                                     
                                     req_status[req]['stage'] = 1
                     
@@ -167,6 +186,7 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                     if t < req_status[req]['adtc']:
                                                                  
                         client_id = (clients_ip[requests_ip[req]['client']]['id'])
+                        cacheServer_used = req_status[req]['cacheServer']
                         req_asset_id = requests_ip[req]['asset']
                         asset_size = int(assets_ip[req_asset_id]['size'])  - req_status[req]['size_transferred_to_client'].get(t,0)
                         cache_throughput = int(cacheServer_ip[req_status[req]['cacheServer']]['max_output_throughput'])
@@ -175,14 +195,22 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                         available_throughput = min(cache_throughput,client_throughput)
                         te = throughput_status_time[client_id]['old']
                         if t in throughput_status_time[client_id]:
-                            n = throughput_status_time[client_id].get(t)
+                            n1 = throughput_status_time[client_id].get(t)
                             throughput_status_time[client_id]['old'] = t
                         else:
-                            n = throughput_status_time[client_id][te]
-                        throughput_to_use = available_throughput/n
-                        
-                        
+                            n1 = throughput_status_time[client_id][te]
                             
+                        te1 = throughput_status_time[cacheServer_used]['old']
+                        if t in throughput_status_time[cacheServer_used]:
+                            n2 = throughput_status_time[cacheServer_used].get(t)
+                            throughput_status_time[cacheServer_used]['old'] = t
+                        else:
+                            n2 = throughput_status_time[cacheServer_used][te1]
+                            
+                            
+                        n = max(n1,n2)
+                        throughput_to_use = available_throughput/n
+                                                    
                         req_status[req]['input_throughput_being_used']['client'] = throughput_to_use
                         req_status[req]['output_throughput_being_used']['cacheServer'] = throughput_to_use
                         cacheServer_status[req_status[req]['cacheServer']]['output_throughput_used'] = throughput_to_use
@@ -202,13 +230,20 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                         cacheServer_status[req_status[req]['cacheServer']]['active_inbound_connections'] -= 1
                         sim_status['connections_client'][requests_ip[req]['client']] -= 1
                         client_id = (clients_ip[requests_ip[req]['client']]['id'])  
-
+                        cacheServer_used = req_status[req]['cacheServer']
                         for key in throughput_status_time[client_id]:
                             if key != 'old' and key != 'temp_adto':
                                 if throughput_status_time[client_id][key] > 1:
                                     throughput_status_time[client_id][key] -=1     
                                 else:
                                     throughput_status_time[client_id][key] = 0
+                                    
+                        for key in throughput_status_time[cacheServer_used]:
+                            if key != 'old' and key != 'temp_adto':
+                                if throughput_status_time[cacheServer_used][key] > 1:
+                                    throughput_status_time[cacheServer_used][key] -=1     
+                                else:
+                                    throughput_status_time[cacheServer_used][key] = 0
                         req_status[req]['completed'] = 1
                         req_status[req]['input_throughput_being_used']['client'] = 0
                         req_status[req]['input_throughput_being_used']['cacheServer'] = 0
