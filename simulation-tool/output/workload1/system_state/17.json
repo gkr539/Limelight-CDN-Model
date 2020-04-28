@@ -1,0 +1,120 @@
+{
+    "tick_duration": 1,
+    "snapshot_time": 17,
+    "workload": "workload1",
+    "number_of_requests_completed": 4,
+    "total_data_transferred": 20,
+    "requests_status": {
+        "request1": {
+            "initiated_at": 0,
+            "client": "client1",
+            "origin": "origin1",
+            "asset": "asset100",
+            "asset_size": 5,
+            "cacheserver": "cacheserver1",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 15
+        },
+        "request2": {
+            "initiated_at": 0,
+            "client": "client2",
+            "origin": "origin1",
+            "asset": "asset100",
+            "asset_size": 5,
+            "cacheserver": "cacheserver3",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 10
+        },
+        "request3": {
+            "initiated_at": 4,
+            "client": "client1",
+            "origin": "origin1",
+            "asset": "asset100",
+            "asset_size": 5,
+            "cacheserver": "cacheserver2",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 9
+        },
+        "request4": {
+            "initiated_at": 4,
+            "client": "client3",
+            "origin": "origin1",
+            "asset": "asset100",
+            "asset_size": 5,
+            "cacheserver": "cacheserver1",
+            "status": "Request already processed",
+            "input_throughput_being_used": {
+                "client": 0,
+                "cacheServer": 0
+            },
+            "output_throughput_being_used": {
+                "origin": 0,
+                "cacheServer": 0
+            },
+            "completed": "Yes",
+            "completed_at": 9
+        }
+    },
+    "cacheserver_status": {
+        "cacheserver2": {
+            "cache_hit": 0,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 100,
+            "number_of_active_inbound_connections": 0,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 5
+        },
+        "cacheserver1": {
+            "cache_hit": 1,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 1024,
+            "number_of_active_inbound_connections": 0,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 10
+        },
+        "cacheserver3": {
+            "cache_hit": 1,
+            "cache_miss": 0,
+            "input_throughput_being_used": 0,
+            "output_throughput_being_used": 0,
+            "input_throughput_available": 1024,
+            "output_throughput_available": 1024,
+            "number_of_active_inbound_connections": 0,
+            "number_of_active_outbound_connections": 0,
+            "total_data_transferred": 5
+        }
+    }
+}
