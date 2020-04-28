@@ -1,5 +1,5 @@
 {
-    "tick_duration": 1,
+    "tick_duration": 10,
     "snapshot_time": 20,
     "workload": "workload1",
     "number_of_requests_completed": 4,
