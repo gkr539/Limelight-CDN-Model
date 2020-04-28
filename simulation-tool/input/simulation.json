@@ -1,7 +1,7 @@
 [
 {
  "id": "simulation1",
- "tick_duration": 10,
+ "tick_duration": 5,
  "simulation_duration": 50,
  "tcp_connection_time": 3,
  "workload": "workload1",
