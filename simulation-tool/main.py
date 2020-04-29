@@ -81,9 +81,9 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                             pprint(cacheServer_status)
                             throughput_avail = cacheServer_status[sorted_cacheserver_list[cs][1]]['output_throughput_available']
                             throughput_limit = cacheServer_ip[sorted_cacheserver_list[cs][1]]["throughput_limit"]
-                            print(throughput_avail)
+                            #print(throughput_avail)
                             #and (throughput_avail > throughput_limit)
-                            if (cacheServer_status[sorted_cacheserver_list[cs][1]]['active_inbound_connections'] + cacheServer_status[sorted_cacheserver_list[cs][1]]['active_outbound_connections'] < max_connections_cache) and (sim_status['connections_client'][requests_ip[req]['client']] < max_connections_client) :
+                            if (cacheServer_status[sorted_cacheserver_list[cs][1]]['active_inbound_connections'] + cacheServer_status[sorted_cacheserver_list[cs][1]]['active_outbound_connections'] < max_connections_cache) and (sim_status['connections_client'][requests_ip[req]['client']] < max_connections_client) and (throughput_avail > throughput_limit) :
                                                                    
                                     cacheServer_used=sorted_cacheserver_list[cs][1]
 
