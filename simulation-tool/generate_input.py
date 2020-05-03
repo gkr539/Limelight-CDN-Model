@@ -58,6 +58,7 @@ for k in order:
             cs_obj["max_output_throughput"]=random.randint(int(data["cacheserver"]["max_output_throughput"][0]/data["cacheserver"]["max_output_throughput"][2]+1),int(data["cacheserver"]["max_output_throughput"][1]/data["cacheserver"]["max_output_throughput"][2]))*data["cacheserver"]["max_output_throughput"][2]
             cs_obj["max_input_throughput"]=random.randint(int(data["cacheserver"]["max_input_throughput"][0]/data["cacheserver"]["max_input_throughput"][2]+1),int(data["cacheserver"]["max_input_throughput"][1]/data["cacheserver"]["max_input_throughput"][2]))*data["cacheserver"]["max_input_throughput"][2]
             cs_obj["time_to_check_cache"]=random.randint(int(data["cacheserver"]["time_to_check_cache"][0]/data["cacheserver"]["time_to_check_cache"][2]+1),int(data["cacheserver"]["time_to_check_cache"][1]/data["cacheserver"]["time_to_check_cache"][2]))*data["cacheserver"]["time_to_check_cache"][2]
+            cs_obj["throughput_limit"]=random.randint(int(data["cacheserver"]["throughput_limit"][0]/data["cacheserver"]["throughput_limit"][2]+1),int(data["cacheserver"]["throughput_limit"][1]/data["cacheserver"]["throughput_limit"][2]))*data["cacheserver"]["throughput_limit"][2]
             cs_obj["cached_assets_id"]=[]
             rand_int=random.randint(1,data["asset"]["number_of_objects"])
             for j in range(rand_int):
@@ -123,6 +124,7 @@ for k in order:
         sim_obj["tcp_connection_time"]=data["simulation"]["tcp_connection_time"]
         sim_obj["workload"]="workload"+str(random.randint(1,data["workload"]["number_of_objects"]))
         sim_obj["plot_for_cacheServer"]=data["simulation"]["plot_for_cacheServer"]
+        sim_obj["timeout"]=data["simulation"]["timeout"]
         master_obj.append(sim_obj)
         with open(os.path.join('input', 'simulation.json'), 'w') as outfile:
             json.dump(master_obj, outfile,indent=4)

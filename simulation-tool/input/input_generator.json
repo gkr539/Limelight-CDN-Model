@@ -14,7 +14,8 @@
 			"max_connections":[10,500,10],
 			"time_to_check_cache":[1,50,10],
 			"max_output_throughput": [10000,30000,1024],
-			"max_input_throughput": [10000,30000,1024]
+			"max_input_throughput": [10000,30000,1024],
+			"throughput_limit":[1000,2000,1024]
 		},
 	"client": {
         	"number_of_objects":200,
@@ -32,8 +33,7 @@
 	     "simulation_duration":500,
 	     "tick_duration": 10,
 	     "tcp_connection_time": 3,
-	     "plot_for_cacheServer": "cacheserver1"
+	     "plot_for_cacheServer": "cacheserver1",
+	     "timeout" : 30
     }
 }
-
-
