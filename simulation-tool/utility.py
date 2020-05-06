@@ -67,7 +67,7 @@ collections=["simulation_input","requests","cacheservers","assets","clients","or
 plt.style.use('ggplot')
 
 
-
+#function for dynamic plots
 def live_plotter(x_vec,y1_data,line1,xlabel,ylabel,title,xlim,ylim,identifier='',pause_time=0.01):
     if line1==[]:
         plt.ion()
@@ -84,8 +84,8 @@ def live_plotter(x_vec,y1_data,line1,xlabel,ylabel,title,xlim,ylim,identifier=''
         plt.title(title)
         mplcursors.cursor(hover=True)
     line1.set_data(x_vec, y1_data)
-    plt.pause(pause_time)
-    plt.ioff()  
+    plt.pause(pause_time) 
+    plt.ioff()
     return line1
 
 
@@ -227,6 +227,7 @@ def CaptureSystemState(snapshot_time,simulation_ip,workload_ip,req_status,cacheS
         
     return simulation_output
 
+#function to create 'output' folder
 def makedirectory(simulation_ip,cacheServer_ip):
     dir = 'output'
     if not os.path.exists(dir):
@@ -250,6 +251,7 @@ def makedirectory(simulation_ip,cacheServer_ip):
         os.makedirs('output/'+workload+'/system_state')                
     return workload
 
+#function for capturing and storing static plots
 def visualize(x,y,z,xlabel,ylabel,title,cs,xlim,ylim,workload,label1=None,label2=None):
     style.use('ggplot')
     ax = plt.figure().gca()
@@ -257,20 +259,18 @@ def visualize(x,y,z,xlabel,ylabel,title,cs,xlim,ylim,workload,label1=None,label2
     plt.ylabel(ylabel)
     plt.title(title)
     ax.set_xlim(0, xlim)
-    ax.set_ylim(0, ylim)
-          
+    ax.set_ylim(0, ylim)         
     if z:
-        ax.yaxis.set_major_locator(MaxNLocator(integer=True))         
-        ax.plot(x,y,'-o',alpha=0.8,label=label1)
-        ax.plot(x,z,'-o',alpha=0.8,label=label2)
+        ax.yaxis.set_major_locator(MaxNLocator(integer=True)) 
+        ax.plot(x,y,alpha=0.8,label=label1)
+        ax.plot(x,z,alpha=0.8,label=label2)
         plt.legend()
         plt.savefig('output/'+workload+'/visualization/'+cs+'/%s.png' %title)
         plt.close()
-
-        
+       
     else:            
-        ax.yaxis.set_major_locator(MaxNLocator(integer=True))        
-        ax.plot(x,y,'-o',alpha=0.8)
+        ax.yaxis.set_major_locator(MaxNLocator(integer=True)) 
+        ax.plot(x,y,alpha=0.8)
         plt.savefig('output/'+workload+'/visualization/'+cs+'/%s.png' %title)
         plt.close()
 
