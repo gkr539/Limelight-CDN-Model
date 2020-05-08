@@ -4,7 +4,10 @@
 Created on Tue Apr  7 19:59:26 2020
 
 @author: srikanth
+
+This tool creates random inputs for simulation
 """
+
 
 import json
 import random
@@ -14,14 +17,15 @@ import os
 
 input_file_path='input/'+sys.argv[1]
 
+#Store input file into a variable
 with open(input_file_path) as json_file:
     data = json.load(json_file)
-
-path="/Users/srikanth/Desktop/Git/Limelight-CDN-Model/simulation-tool/input/"
 
 order=["assets","origin","cacheservers","clients","requests","workloads","simulation"]    
 
 for k in order:
+    
+    #Build asset objects
     if k=="assets":
         asset_count=data["asset"]["number_of_objects"]
         master_obj=[]
@@ -32,6 +36,8 @@ for k in order:
             master_obj.append(asset_obj)
         with open(os.path.join('input', 'assets.json'), 'w') as outfile:
             json.dump(master_obj, outfile,indent=4)
+    
+    #Build origin objects
     if k=="origin":
         origin_count=data["origin"]["number_of_objects"]
         master_obj=[]
@@ -48,6 +54,8 @@ for k in order:
             master_obj.append(origin_obj)
         with open(os.path.join('input', 'origins.json'), 'w') as outfile:
             json.dump(master_obj, outfile,indent=4)
+    
+    #Build Cacheserver objects
     if k=="cacheservers":
         cs_count=data["cacheserver"]["number_of_objects"]
         master_obj=[]
@@ -66,6 +74,8 @@ for k in order:
             master_obj.append(cs_obj)
         with open(os.path.join('input', 'cacheservers.json'), 'w') as outfile:
             json.dump(master_obj, outfile,indent=4)
+    
+    #Build client objects
     if k=="clients":
         client_count=data["client"]["number_of_objects"]
         master_obj=[]
@@ -82,6 +92,8 @@ for k in order:
             master_obj.append(client_obj)
         with open(os.path.join('input', 'clients.json'), 'w') as outfile:
             json.dump(master_obj, outfile,indent=4)
+            
+    #Build request objects
     if k=="requests":
         req_count=data["request"]["number_of_objects"]
         master_obj=[]
@@ -95,6 +107,8 @@ for k in order:
             master_obj.append(req_obj)
         with open(os.path.join('input', 'requests.json'), 'w') as outfile:
             json.dump(master_obj, outfile,indent=4)
+            
+    #Build workload objects
     if k=="workloads":
         wl_count=data["workload"]["number_of_objects"]
         master_obj=[]
@@ -115,6 +129,8 @@ for k in order:
             master_obj.append(wl_obj)
         with open(os.path.join('input', 'workloads.json'), 'w') as outfile:
             json.dump(master_obj, outfile,indent=4)
+    
+    #Build simulation object
     if k=="simulation":
         master_obj=[]
         sim_obj={}

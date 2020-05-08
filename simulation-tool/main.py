@@ -2,7 +2,16 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Mar 19 22:57:24 2020
-@author: gouthamkrs
+
+@authors: 
+    
+Goutam Krishna Reddy Sagam
+Srikanth Ammineni
+Madhumitha Sivasankaran
+Shubhangi Mane
+
+This is the python code for CDN simulation tool where one can model 
+different cache configurations allowing us to test cache server behaviour as in the real world.
 """
 
 '''
@@ -16,7 +25,7 @@ adto - asset deliver time from origin
 end - if end is 1 then request is processed and asset is delivered 
 '''
 
-
+#Importing necessary libraries
 import utility
 import collections
 from pprint import pprint
@@ -25,11 +34,9 @@ import os
 import json
 from utility import live_plotter
 
-#stores request status
+#Initializing dictionaries that stores request, simulation and throughput status
 req_status = collections.defaultdict(dict)
-
 sim_status = collections.defaultdict(dict)
-
 throughput_status = collections.defaultdict(dict)
 
 #stores time at which client or cache server is using throughput
@@ -40,7 +47,21 @@ cacheServer_status = collections.defaultdict(dict)
 
 
 
-def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,clients_ip,origin_ip): 
+def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,clients_ip,origin_ip):
+    """
+    This function handles the core of the simulation. 
+    
+    ---Parameters to be passed---
+    t - time
+    requests_ip - request objects
+    simulation_ip - Simulation objects
+    workload_ip - Workload objects
+    cacheserver_ip - Cacheserver objects
+    assets_ip - Asset objects
+    clients_ip - Client objects
+    origin_ip - Origin objects
+    """
+    
     #handle new requests
     if t in workload_ip.keys():
         new_req = workload_ip[t] 
@@ -64,14 +85,20 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
     if req_status:
         #process requests based on their finish time.
         sorted_keys = utility.sortKeys(req_status)
-        for req in sorted_keys:             
-            if req_status[req]['completed'] == 0:                
+        for req in sorted_keys:   
+            
+            #Check if the request is completed
+            if req_status[req]['completed'] == 0:       
+                #Stage -0 - Initial stage. Establishing TCP connection between Client and Cacheserver 
                 if req_status[req]['stage'] ==  0:
+                    
+                    #if current time less than the tcp connection time to cache Server
                     if t < req_status[req]['tctc']:
                         req_status[req][t] = 'Establishing TCP connection to cache server'
                         sorted_cacheserver_list=utility.assignCacheServer(clients_ip, requests_ip[req]['client']) 
                         req_status[req]['cacheServer']=sorted_cacheserver_list[0][1]
                         continue
+                    #if current time qual to the tcp connection time to cache Server
                     elif t == req_status[req]['tctc']:
                         max_connections_client = clients_ip[requests_ip[req]['client']]['max_connections']
                         flag = False
@@ -152,7 +179,7 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                                 req_status[req][t]= "Request time out"
                                 
                             continue
-
+                #Stage -1 - Checking the asset in Cache
                 if req_status[req]['stage'] ==  1:
                     if t < req_status[req]['cct']:
                         req_status[req]['timeout_count'] = 0
@@ -186,8 +213,7 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                             cacheServer_status[req_status[req]['cacheServer']]['cache_miss'] += 1 
                             req_status[req]['stage'] = 3
                     
-                                            
-                #handle adtc
+                #Stage-2 - Transferring Asset to client if asset found in Cache
                 if req_status[req]['stage'] ==  2:
                     if t < req_status[req]['adtc']:
                                                                  
@@ -259,6 +285,7 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                         req_status[req]['completed_at']=t
                 #establishing connection to origin
                 if req_status[req]['stage'] >=  3:
+                    #Stage-3 - Establishing TCP connection between Client and Origin if asset not found in Cache
                     if req_status[req]['stage'] == 3:
                         if t < req_status[req]['tcto']:
                             req_status[req][t] = 'Establishing TCP connection to Origin'
@@ -294,6 +321,7 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                                     req_status[req]['completed_at'] = t
                                     req_status[req][t]= "Request time out"
                                 continue
+                    #Stage-4 - Checking for the requested asset in Origin
                     elif req_status[req]['stage'] == 4 :     
                         if t < req_status[req]['oct']:
                             req_status[req][t] = 'Checking for the requested asset in Origin'
@@ -407,6 +435,7 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                                 req_status[req]['size_transferred_to_client'] = {}
                                 req_status[req]['size_transferred_to_client'][t] = 0
                         #handle adtc
+                    #Stage-5 - Transferring the asset to Client
                     if req_status[req]['stage'] ==  5:
                         if t < req_status[req]['adtc1']:
                             client_id = (clients_ip[requests_ip[req]['client']]['id'])
@@ -481,6 +510,7 @@ request_list = []
 workload_id={}
 
 
+#Function to loop through time
 def timer(requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip,clients_ip,origin_ip,workloads):
 
     workload = utility.makedirectory(simulation_ip,cacheServer_ip)

@@ -16,8 +16,8 @@ from matplotlib import style
 from pprint import pprint
 
 
+#Function to read json input files
 def read_json(path):
-    
     f = open(path)
     data = json.load(f) 
     temp = {}
@@ -28,7 +28,7 @@ def read_json(path):
     
     
 
-
+#Function to read workload input file
 def input_workload(filepath):   
      workloads=read_json(filepath)
      dict={}
@@ -41,28 +41,11 @@ def input_workload(filepath):
      return dict
  
     
-    
+#Function to calculate time to transfer asset based on throughput
 def timeToTransfer(size, throughput):
     #return time in milli seconds
     time = (size/throughput)*1000
     return math.ceil(time)
-
-def storeObjectInDB(collection,data,db):
-    coll = db[collection]
-    coll.insert_many(data)
-
-def storeInputObjectsInDB(collections,inputs,db):
-    for collection,ip in zip(collections,inputs):
-        storeObjectInDB(collection,[ip],db)
-        
-
-def deleteDataInCollections(collections,db):
-    for coll in collections:
-        coll=db[coll]
-        coll.remove() 
-        
-collections=["simulation_input","requests","cacheservers","assets","clients","origins","workloads","systemstate"]
-
 
 plt.style.use('ggplot')
 
@@ -89,6 +72,7 @@ def live_plotter(x_vec,y1_data,line1,xlabel,ylabel,title,xlim,ylim,identifier=''
     return line1
 
 
+#Function to choose cacheserver based on the distance matrix
 def assignCacheServer(clients_ip, client):
     distances = clients_ip[client]['distance']
     
@@ -97,6 +81,7 @@ def assignCacheServer(clients_ip, client):
     return distance_arr
 
 
+#Function to build Cacheserver Status
 def build_cacheServer_status(cacheServer_status, cacheServer,cacheServer_ip):
     if cacheServer in cacheServer_status:
         return cacheServer_status
@@ -110,7 +95,9 @@ def build_cacheServer_status(cacheServer_status, cacheServer,cacheServer_ip):
         cacheServer_status[cacheServer]['input_throughput_available'] = int(cacheServer_ip[cacheServer]["max_input_throughput"])
         cacheServer_status[cacheServer]['output_throughput_available'] = int(cacheServer_ip[cacheServer]["max_output_throughput"])
         return cacheServer_status
+ 
     
+#Function to build Request Status    
 def build_request_status(req_status,req,t,requests_ip,assets_ip):   
         
     
@@ -148,20 +135,11 @@ def sortKeys(req_status):
             else:
                 temp_key1.append((0,r))
                 
-            '''  
-            #print(req_status[r].get('adtc1'))
-            if  v1 != 0:
-                v2 = req_status[r].get('adtc',0)
-                temp_keys.append((v2,r))
-            else:
-                temp_keys.append((v1,r))
-            v3 = req_status[r].get('cct',0)
-            '''
     temp_key1.sort(key = lambda x : x[0])      
     fin_keys = [i[1] for i in temp_key1] 
     return fin_keys
         
-
+#Function to capture System State
 def CaptureSystemState(snapshot_time,simulation_ip,workload_ip,req_status,cacheServer_status,workloads):  
     simulation_output={}
     simulation_output['tick_duration']=int(simulation_ip['simulation1']['tick_duration'])
