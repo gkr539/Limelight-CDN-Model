@@ -57,6 +57,7 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
             
     #handle started requests    
     if req_status:
+        #process requests based on their finish time.
         sorted_keys = utility.sortKeys(req_status)
         for req in sorted_keys:             
             if req_status[req]['completed'] == 0:                
@@ -156,7 +157,7 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                             req_status[req][t] = 'TCP connection established between Client and Cacheserver. Checking for the requested asset in Cache'
                         continue
                     elif t == req_status[req]['cct']:
-                        #check if cache present in cache server ( added 'cached_assets_id' in json)
+                        #check if cache present in cache server 
                         if requests_ip[req]['asset'] in cacheServer_ip[req_status[req]['cacheServer']]['cached_assets_id']:
                             req_status[req][t] = 'Requested asset present in cache'
                             #check throughput and calculate endpoint to transfer asset to client
@@ -227,7 +228,7 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                         continue
                     elif t == req_status[req]['adtc']:
                         req_status[req][t] = 'Asset transferred to client'
-                        #updating the inboundconnections after the asset is transfered
+                        #updating the inbound connections after the asset is transfered
                         cacheServer_status[req_status[req]['cacheServer']]['active_inbound_connections'] -= 1
                         sim_status['connections_client'][requests_ip[req]['client']] -= 1
                         client_id = (clients_ip[requests_ip[req]['client']]['id'])  
@@ -429,6 +430,7 @@ def simulation(t,requests_ip,simulation_ip, workload_ip,cacheServer_ip,assets_ip
                         elif t == req_status[req]['adtc1']:
                             req_status[req][t] = 'Asset transferred to client'
             
+                            #release connection
                             sim_status['inbound_connections_cacheServer'] -=1
                             cacheServer_status[req_status[req]['cacheServer']]['active_inbound_connections'] -= 1
                             sim_status['connections_client'][requests_ip[req]['client']] -= 1
@@ -614,6 +616,7 @@ def main():
     f = open('input/'+sys.argv[1])
     contents = f.read()
     lines = contents.splitlines()
+    #read data from json files
     simulation_ip = utility.read_json('input/'+lines[0])
     requests_ip = utility.read_json('input/'+lines[1])
     cacheServer_ip = utility.read_json('input/'+lines[2])
