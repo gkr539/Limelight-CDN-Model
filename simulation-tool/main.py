@@ -25,12 +25,17 @@ import os
 import json
 from utility import live_plotter
 
-
+#stores request status
 req_status = collections.defaultdict(dict)
+
 sim_status = collections.defaultdict(dict)
 
 throughput_status = collections.defaultdict(dict)
+
+#stores time at which client or cache server is using throughput
 throughput_status_time = collections.defaultdict(dict)
+
+#stores cache server status
 cacheServer_status = collections.defaultdict(dict)
 
 
