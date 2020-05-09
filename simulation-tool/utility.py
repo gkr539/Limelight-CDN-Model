@@ -68,7 +68,6 @@ def live_plotter(x_vec,y1_data,line1,xlabel,ylabel,title,xlim,ylim,identifier=''
         mplcursors.cursor(hover=True)
     line1.set_data(x_vec, y1_data)
     plt.pause(pause_time) 
-    plt.ioff()
     return line1
 
 
